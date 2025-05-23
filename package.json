@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "gitbook-plugin-highlight": "^2.0.3",
-    "gitbook-plugin-theme-default": "^1.0.7",
-    "honkit": "^6.0.3"
+    "gitbook-plugin-theme-default": "^1.0.7"
   }
 }

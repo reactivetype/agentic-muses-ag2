@@ -1,0 +1,743 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Code Execution · Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../extending-and-customizing/" />
+    
+    
+    <link rel="prev" href="interoperability.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting-started/">
+            
+                <a href="../getting-started/">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../getting-started/installation.html">
+            
+                <a href="../getting-started/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../getting-started/quick-start.html">
+            
+                <a href="../getting-started/quick-start.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../core-concepts/">
+            
+                <a href="../core-concepts/">
+            
+                    
+                    Core Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../core-concepts/architecture-overview.html">
+            
+                <a href="../core-concepts/architecture-overview.html">
+            
+                    
+                    Architecture Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../core-concepts/agents-and-conversations.html">
+            
+                <a href="../core-concepts/agents-and-conversations.html">
+            
+                    
+                    Agents and Conversations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../core-concepts/llm-configuration.html">
+            
+                <a href="../core-concepts/llm-configuration.html">
+            
+                    
+                    LLM Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../core-concepts/tools-and-toolkit.html">
+            
+                <a href="../core-concepts/tools-and-toolkit.html">
+            
+                    
+                    Tools and Toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../core-concepts/function-utilities.html">
+            
+                <a href="../core-concepts/function-utilities.html">
+            
+                    
+                    Function Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Advanced Topics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="group-chat-patterns.html">
+            
+                <a href="group-chat-patterns.html">
+            
+                    
+                    Group Chat Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="capabilities-and-composability.html">
+            
+                <a href="capabilities-and-composability.html">
+            
+                    
+                    Capabilities and Composability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="retrieval-augmented-generation.html">
+            
+                <a href="retrieval-augmented-generation.html">
+            
+                    
+                    Retrieval Augmented Generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="interoperability.html">
+            
+                <a href="interoperability.html">
+            
+                    
+                    Interoperability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="code-execution.html">
+            
+                <a href="code-execution.html">
+            
+                    
+                    Code Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../extending-and-customizing/">
+            
+                <a href="../extending-and-customizing/">
+            
+                    
+                    Extending and Customizing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../extending-and-customizing/custom-agents.html">
+            
+                <a href="../extending-and-customizing/custom-agents.html">
+            
+                    
+                    Custom Agents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../extending-and-customizing/custom-tools.html">
+            
+                <a href="../extending-and-customizing/custom-tools.html">
+            
+                    
+                    Custom Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../extending-and-customizing/integrating-new-llm-providers.html">
+            
+                <a href="../extending-and-customizing/integrating-new-llm-providers.html">
+            
+                    
+                    Integrating New LLM Providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../agent-patterns-and-workflows/">
+            
+                <a href="../agent-patterns-and-workflows/">
+            
+                    
+                    Agent Patterns and Workflows
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../agent-patterns-and-workflows/swarm-and-nested-agents.html">
+            
+                <a href="../agent-patterns-and-workflows/swarm-and-nested-agents.html">
+            
+                    
+                    Swarm and Nested Agents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../agent-patterns-and-workflows/realtime-agents.html">
+            
+                <a href="../agent-patterns-and-workflows/realtime-agents.html">
+            
+                    
+                    Realtime Agents
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../testing-and-utilities/">
+            
+                <a href="../testing-and-utilities/">
+            
+                    
+                    Testing and Utilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../testing-and-utilities/testing-patterns.html">
+            
+                <a href="../testing-and-utilities/testing-patterns.html">
+            
+                    
+                    Testing Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../testing-and-utilities/utilities-and-helpers.html">
+            
+                <a href="../testing-and-utilities/utilities-and-helpers.html">
+            
+                    
+                    Utilities and Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Code Execution</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>content:
+  overview: |
+    Code execution in advanced agent frameworks empowers agents to go beyond natural language reasoning by actually running code, invoking tools, and managing execution environments. This capability allows agents to solve tasks programmatically, execute user-defined or system-provided functions ("tools"), and interact safely with the outside world. Execution environments can be locally sandboxed, remote, or even cloud-based, and must be managed to ensure security, reproducibility, and efficiency.
+  explanation: |
+    In an agentic system, "code execution" refers to the agent's ability to run code—either generated by an LLM or pre-registered as a callable tool—during a conversation or workflow. This is achieved via abstractions that wrap functions as "Tools," which are then registered with agent instances (like <code>ConversableAgent</code>). When a user or another agent issues a command or request, the agent can resolve the request to a specific tool, call it with the appropriate arguments, and return the result in the ongoing conversation.</p>
+<pre><code>The execution environment determines where and how this code runs. By default, Python functions/tools run in the agent’s local environment, but advanced settings may use containerized, remote, or polyglot backends to isolate or scale execution. Managing execution environments involves controlling resource usage, handling security concerns (e.g., code injection risks), and tracking execution context (such as variable scope, working directory, or even session state).
+
+Key abstractions and patterns:
+  - **ConversableAgent** is the core agent type, managing chat, tool registration, and message dispatch.
+  - **Tool** and **Toolkit** wrap and organize executable functions, supporting both LLM-initiated and direct execution.
+  - Tools can be registered for "execution" (actual code run), "propose" (LLM can suggest the tool), or both.
+  - Agents may support custom execution backends or context (e.g., Jupyter, subprocess, remote API).
+  - Group settings (multi-agent chats) may require careful environment management to avoid conflicts or resource leaks.
+  - LLM-generated code execution is supported via secure evaluation interfaces, and often includes output/error capture.
+</code></pre><p>  examples:</p>
+<pre><code>- title: "Registering and Executing a Tool"
+  description: |
+    Register a Python function as a tool with an agent, then execute it via agent interaction.
+  code: |
+    from autogen import ConversableAgent
+    from autogen.tools import tool
+
+    # Define a tool (function) to add two numbers
+    @tool(name="add", description="Add two numbers")
+    def add(a: int, b: int) -&gt; int:
+        return a + b
+
+    # Create an agent and register the tool
+    agent = ConversableAgent(
+        name="assistant",
+        system_message="You can execute tools.",
+        llm_config={...}
+    )
+    agent.register_for_execution()(add)
+
+    # Simulate code execution in response to a message
+    result = agent.execute_tool("add", a=2, b=3)
+    print(result)  # Output: 5
+
+- title: "Tool Registration for LLM and Execution"
+  description: |
+    Register a tool for both LLM function-calling and direct execution, allowing agents to use it in conversations or directly.
+  code: |
+    @tool(name="multiply", description="Multiply two numbers")
+    def multiply(a: int, b: int) -&gt; int:
+        return a * b
+
+    agent.register_tool(multiply)  # Registers for both propose and execute
+
+- title: "Custom Execution Environment (Jupyter Backend)"
+  description: |
+    Configure an agent to execute code snippets in a Jupyter kernel (e.g., for Python code execution isolation).
+  code: |
+    from autogen import ConversableAgent
+    from autogen.execution.jupyter import JupyterExecutionBackend
+
+    agent = ConversableAgent(
+        name="notebook_agent",
+        system_message="You can execute Python code in a Jupyter kernel.",
+        llm_config={...},
+        execution_backend=JupyterExecutionBackend()
+    )
+
+    code = "print(2 + 2)"
+    output = agent.execute_code(code)
+    print(output)  # Output: 4
+
+- title: "Group Chat: Managing Tool Execution in Multi-Agent Workflows"
+  description: |
+    Set up a group chat where agents can execute code/tools in a coordinated way, ensuring that each agent's execution context is managed.
+  code: |
+    from autogen import GroupChat, GroupChatManager, ConversableAgent
+    from autogen.tools import tool
+
+    @tool(name="increment", description="Increment a number")
+    def increment(x: int) -&gt; int:
+        return x + 1
+
+    agent1 = ConversableAgent("agent1")
+    agent2 = ConversableAgent("agent2")
+    agent1.register_for_execution()(increment)
+    agent2.register_for_execution()(increment)
+
+    groupchat = GroupChat([agent1, agent2])
+    manager = GroupChatManager(groupchat)
+    agent1.initiate_chat(manager, message="Increment 5")
+</code></pre><p>  best_practices:</p>
+<pre><code>- "Always register tools with accurate type hints and descriptions for reliable code execution and LLM integration."
+- "Use decorators (e.g., @tool) for registering functions as tools; avoid manual Tool object creation unless necessary."
+- "Isolate code execution if running untrusted or user-generated code (use Jupyter, subprocess, or containers)."
+- "Monitor resource usage and handle errors gracefully; capture exceptions and return informative error messages."
+- "Register all required tools before starting a chat or workflow to ensure the agent can access them."
+- "Explicitly manage agent execution context in group chats to avoid state leaks or conflicts."
+- "Avoid registering tools with overlapping names to prevent ambiguity in function calls."
+- "Audit code execution permissions in production environments for security."
+</code></pre><p>  related_concepts:</p>
+<pre><code>- name: "Tool and Toolkit"
+  description: "Tools encapsulate executable functions, and toolkits organize them; code execution relies on these abstractions for structured, safe invocation."
+- name: "ConversableAgent"
+  description: "The primary agent class that manages tool registration, execution, and message flow, enabling code execution in conversations."
+- name: "LLMConfig"
+  description: "LLMConfig determines which language model to use for code generation or tool call proposal; execution may be directly or LLM-initiated."
+- name: "GroupChat and GroupChatManager"
+  description: "Multi-agent workflows often require careful code execution management to ensure each agent's context and tools are isolated and coordinated."
+- name: "Execution Backend"
+  description: "Custom backends (e.g., Jupyter, subprocess) allow for sandboxed or language-specific code execution beyond the default Python environment."
+- name: "Tool Interoperability"
+  description: "Supports running tools imported from other ecosystems (like LangChain), expanding the agent's execution possibilities."
+- name: "Security and Sandboxing"
+  description: "Code execution introduces security risks; use sandboxing (containers, restricted kernels) and review generated code for safety."
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="interoperability.html" class="navigation navigation-prev " aria-label="Previous page: Interoperability">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../extending-and-customizing/" class="navigation navigation-next " aria-label="Next page: Extending and Customizing">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Code Execution","level":"1.4.5","depth":2,"next":{"title":"Extending and Customizing","level":"1.5","depth":1,"path":"chapters/extending-and-customizing/README.md","ref":"chapters/extending-and-customizing/README.md","articles":[{"title":"Custom Agents","level":"1.5.1","depth":2,"path":"chapters/extending-and-customizing/custom-agents.md","ref":"chapters/extending-and-customizing/custom-agents.md","articles":[]},{"title":"Custom Tools","level":"1.5.2","depth":2,"path":"chapters/extending-and-customizing/custom-tools.md","ref":"chapters/extending-and-customizing/custom-tools.md","articles":[]},{"title":"Integrating New LLM Providers","level":"1.5.3","depth":2,"path":"chapters/extending-and-customizing/integrating-new-llm-providers.md","ref":"chapters/extending-and-customizing/integrating-new-llm-providers.md","articles":[]}]},"previous":{"title":"Interoperability","level":"1.4.4","depth":2,"path":"chapters/advanced-topics/interoperability.md","ref":"chapters/advanced-topics/interoperability.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false,"showSummary":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Documentation","language":"en","gitbook":"*"},"file":{"path":"chapters/advanced-topics/code-execution.md","mtime":"2025-05-23T21:50:36.759Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-05-23T21:50:48.308Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
