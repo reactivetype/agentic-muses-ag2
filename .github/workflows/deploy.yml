@@ -22,8 +22,6 @@ jobs:
           npm install honkit@latest
           npm install gitbook-plugin-theme-default
           npm install gitbook-plugin-highlight
-          npm install gitbook-plugin-search
-          npm install gitbook-plugin-sharing
           
       - name: Build Documentation
         run: |
