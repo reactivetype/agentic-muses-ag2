@@ -1,0 +1,743 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Retrieval Augmented Generation · Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 6.0.3">
+        <meta name="author" content="Your Name">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="interoperability.html" />
+    
+    
+    <link rel="prev" href="capabilities-and-composability.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../getting-started/installation.html">
+            
+                <a href="../getting-started/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../getting-started/quick-start.html">
+            
+                <a href="../getting-started/quick-start.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../core-concepts.html">
+            
+                <a href="../core-concepts.html">
+            
+                    
+                    Core Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../core-concepts/architecture-overview.html">
+            
+                <a href="../core-concepts/architecture-overview.html">
+            
+                    
+                    Architecture Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../core-concepts/agents-and-conversations.html">
+            
+                <a href="../core-concepts/agents-and-conversations.html">
+            
+                    
+                    Agents and Conversations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../core-concepts/llm-configuration.html">
+            
+                <a href="../core-concepts/llm-configuration.html">
+            
+                    
+                    LLM Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../core-concepts/tools-and-toolkit.html">
+            
+                <a href="../core-concepts/tools-and-toolkit.html">
+            
+                    
+                    Tools and Toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../core-concepts/function-utilities.html">
+            
+                <a href="../core-concepts/function-utilities.html">
+            
+                    
+                    Function Utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../advanced-topics.html">
+            
+                <a href="../advanced-topics.html">
+            
+                    
+                    Advanced Topics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="group-chat-patterns.html">
+            
+                <a href="group-chat-patterns.html">
+            
+                    
+                    Group Chat Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="capabilities-and-composability.html">
+            
+                <a href="capabilities-and-composability.html">
+            
+                    
+                    Capabilities and Composability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="retrieval-augmented-generation.html">
+            
+                <a href="retrieval-augmented-generation.html">
+            
+                    
+                    Retrieval Augmented Generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="interoperability.html">
+            
+                <a href="interoperability.html">
+            
+                    
+                    Interoperability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="code-execution.html">
+            
+                <a href="code-execution.html">
+            
+                    
+                    Code Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../extending-and-customizing.html">
+            
+                <a href="../extending-and-customizing.html">
+            
+                    
+                    Extending and Customizing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../extending-and-customizing/custom-agents.html">
+            
+                <a href="../extending-and-customizing/custom-agents.html">
+            
+                    
+                    Custom Agents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../extending-and-customizing/custom-tools.html">
+            
+                <a href="../extending-and-customizing/custom-tools.html">
+            
+                    
+                    Custom Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../extending-and-customizing/integrating-new-llm-providers.html">
+            
+                <a href="../extending-and-customizing/integrating-new-llm-providers.html">
+            
+                    
+                    Integrating New LLM Providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../agent-patterns-and-workflows.html">
+            
+                <a href="../agent-patterns-and-workflows.html">
+            
+                    
+                    Agent Patterns and Workflows
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../agent-patterns-and-workflows/swarm-and-nested-agents.html">
+            
+                <a href="../agent-patterns-and-workflows/swarm-and-nested-agents.html">
+            
+                    
+                    Swarm and Nested Agents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../agent-patterns-and-workflows/realtime-agents.html">
+            
+                <a href="../agent-patterns-and-workflows/realtime-agents.html">
+            
+                    
+                    Realtime Agents
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../testing-and-utilities.html">
+            
+                <a href="../testing-and-utilities.html">
+            
+                    
+                    Testing and Utilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../testing-and-utilities/testing-patterns.html">
+            
+                <a href="../testing-and-utilities/testing-patterns.html">
+            
+                    
+                    Testing Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../testing-and-utilities/utilities-and-helpers.html">
+            
+                <a href="../testing-and-utilities/utilities-and-helpers.html">
+            
+                    
+                    Utilities and Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Retrieval Augmented Generation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="retrieval-augmented-generation">Retrieval Augmented Generation</h1>
+<h2 id="quality-check">Quality Check</h2>
+<pre><code class="lang-yaml"><span class="hljs-attr">quality_check:</span>
+<span class="hljs-attr">  score:</span> <span class="hljs-number">8</span>
+<span class="hljs-attr">  issues:</span>
+<span class="hljs-attr">    - type:</span> <span class="hljs-string">"Technical Accuracy"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"The documentation implies that the LLM will proactively decide when to use retrieval tools (function-calling). In practice, this depends on the LLM's configuration and training, and may require prompt engineering or explicit instructions."</span>
+<span class="hljs-attr">      severity:</span> <span class="hljs-string">"medium"</span>
+<span class="hljs-attr">      suggestion:</span> <span class="hljs-string">"Clarify that tool invocation by the LLM depends on system configuration, and may require suitable system prompts or tool schemas."</span>
+<span class="hljs-attr">    - type:</span> <span class="hljs-string">"Completeness"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"There is no discussion of limitations or common pitfalls of RAG, such as latency, retrieval errors, or the possibility of outdated information in the database."</span>
+<span class="hljs-attr">      severity:</span> <span class="hljs-string">"medium"</span>
+<span class="hljs-attr">      suggestion:</span> <span class="hljs-string">"Add a 'Limitations' or 'Caveats' subsection highlighting common issues and mitigations."</span>
+<span class="hljs-attr">    - type:</span> <span class="hljs-string">"Code Example Completeness"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"In the code examples, some variables (e.g., user_proxy, llm_config, vector_db) are left as ellipses or undefined, which may confuse users unfamiliar with the framework."</span>
+<span class="hljs-attr">      severity:</span> <span class="hljs-string">"medium"</span>
+<span class="hljs-attr">      suggestion:</span> <span class="hljs-string">"Provide brief inline comments or example values for placeholders like user_proxy, llm_config, and vector_db, or reference where users can learn about these constructs."</span>
+<span class="hljs-attr">    - type:</span> <span class="hljs-string">"Clarity"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"Some sentences are dense and use advanced terminology without definition (e.g., 'agentic', 'function-calling interface')."</span>
+<span class="hljs-attr">      severity:</span> <span class="hljs-string">"low"</span>
+<span class="hljs-attr">      suggestion:</span> <span class="hljs-string">"Add brief definitions or links for less common terms to aid newcomers."</span>
+<span class="hljs-attr">    - type:</span> <span class="hljs-string">"Best Practices Coverage"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"While the best practices are strong, they do not mention security or privacy, which can be important with external document sources."</span>
+<span class="hljs-attr">      severity:</span> <span class="hljs-string">"low"</span>
+<span class="hljs-attr">      suggestion:</span> <span class="hljs-string">"Add a best practice note regarding security/privacy when ingesting or retrieving sensitive documents."</span>
+<span class="hljs-attr">  strengths:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Comprehensive explanation of RAG in the context of agentic AI frameworks."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Well-structured, practical code examples that illustrate different RAG patterns (basic, document agent, group pattern)."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Clear enumeration of best practices, covering modularity, configuration, and retrieval quality."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Helpful related concepts section that orients the reader to relevant abstractions in the framework."</span>
+<span class="hljs-attr">  recommendations:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Clarify placeholder variables in code examples or reference their required types/configuration."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Add a section or note about common RAG limitations and how to address them (e.g., latency, stale data, tool invocation reliability)."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Consider expanding best practices to mention security/privacy, and possibly monitoring for sensitive data exposure."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Add brief definitions or references for advanced terms for the benefit of less experienced users."</span>
+</code></pre>
+<h2 id="content">Content</h2>
+<pre><code class="lang-yaml"><span class="hljs-attr">content:</span>
+<span class="hljs-attr">  overview:</span> <span class="hljs-string">|
+    Retrieval Augmented Generation (RAG) is an advanced technique that combines Large Language Models (LLMs) with external information retrieval systems to enhance accuracy, reduce hallucination, and enable up-to-date or domain-specific responses. In an agentic AI framework, RAG is implemented by integrating agents with vector databases and document agents, enabling dynamic search, retrieval, and synthesis of relevant information during conversations.
+
+</span><span class="hljs-attr">  explanation:</span> <span class="hljs-string">|
+    Traditional LLMs generate responses solely based on their trained knowledge, which may be outdated or incomplete. Retrieval Augmented Generation (RAG) addresses this limitation by allowing LLMs to access and incorporate information retrieved from external sources—such as indexed documents, knowledge bases, or vector databases—at generation time.
+
+    In agent-based frameworks, RAG is achieved by:
+      - Registering retrieval tools (functions that query vector databases or search corpora) with ConversableAgent or specialized document agents.
+      - Using these tools within the LLM's function-calling interface, so the model can proactively fetch and ground its answers on real data.
+      - Employing multi-agent patterns, where one agent specializes in retrieval (DocumentAgent), another in synthesis, and orchestration is managed via GroupChat or GroupChatManager.
+
+    Vector database integrations (e.g., with FAISS, Pinecone, Chroma, Weaviate) are central to RAG, as they enable fast, semantic similarity search over large collections of text or documents. Tools encapsulate these retrieval operations and expose them to the agent layer. Document agents are preconfigured ConversableAgent subclasses or wrappers designed to handle document ingestion, embedding, and retrieval workflows, abstracting the low-level vector store logic.
+
+    RAG workflows typically involve:
+      1. User query: An agent receives a question.
+      2. Retrieval: The agent uses a registered retrieval tool to search the vector DB for relevant passages.
+      3. Synthesis: The agent (or a dedicated synthesizer agent) combines the retrieved snippets with LLM reasoning to produce a grounded response.
+
+    This modular approach allows for flexible, updatable, and auditable agentic systems capable of leveraging both LLM reasoning and external knowledge.
+
+</span><span class="hljs-attr">  examples:</span>
+<span class="hljs-attr">    - title:</span> <span class="hljs-string">"Basic RAG with ConversableAgent and Vector DB"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"Using a retrieval tool that queries a vector database, registered with a ConversableAgent."</span>
+<span class="hljs-attr">      code:</span> <span class="hljs-string">|
+        from autogen import ConversableAgent
+        from autogen.tools import tool
+
+        # Assume you have a vector DB client (e.g., FAISS, Chroma)
+        vector_db = ...  # Initialized vector DB client
+
+        @tool(name="retrieve_docs", description="Retrieve relevant documents from the vector DB")
+        def retrieve_docs(query: str, top_k: int = 3):
+            # Returns the top_k most similar documents
+            return vector_db.search(query, top_k=top_k)
+
+        agent = ConversableAgent(
+            name="rag_agent",
+            system_message="You are a helpful AI assistant with access to a document database.",
+            llm_config={...}
+        )
+        agent.register_tool(retrieve_docs)
+
+        # Now, when the agent is prompted, LLM can choose to call retrieve_docs
+        response = agent.initiate_chat(
+            user_proxy,
+            message="What does the latest company policy say about remote work?"
+        )
+
+</span><span class="hljs-attr">    - title:</span> <span class="hljs-string">"DocumentAgent for End-to-End RAG"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"Using a specialized DocumentAgent to manage document ingestion, embedding, and retrieval."</span>
+<span class="hljs-attr">      code:</span> <span class="hljs-string">|
+        from autogen.agentchat.document_agent import DocumentAgent
+
+        doc_agent = DocumentAgent(
+            name="doc_agent",
+            vector_db_config={
+                "provider": "chroma",
+                "persist_dir": "./db",
+                # Other DB-specific config
+            },
+            llm_config={...}
+        )
+
+        # Add documents to the agent's vector DB
+        doc_agent.ingest_documents([
+            {"title": "Policy", "content": "Remote work is allowed up to 3 days per week ..."},
+            # more documents
+        ])
+
+        # User query triggers retrieval and synthesis
+        answer = doc_agent.initiate_chat(
+            user_proxy,
+            message="What are the company’s remote work rules?"
+        )
+
+</span><span class="hljs-attr">    - title:</span> <span class="hljs-string">"Group Pattern: Retrieval and Synthesis Agents"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"Orchestrating a pipeline where one agent retrieves, and another synthesizes the final answer."</span>
+<span class="hljs-attr">      code:</span> <span class="hljs-string">|
+        from autogen import GroupChat, GroupChatManager, ConversableAgent
+        from autogen.agentchat.document_agent import DocumentAgent
+        from autogen.agentchat.group.patterns.auto import AutoPattern
+
+        retriever = DocumentAgent(name="retriever", vector_db_config={...}, llm_config={...})
+        synthesizer = ConversableAgent(name="synthesizer", system_message="Summarize the retrieved docs.", llm_config={...})
+
+        agents = [retriever, synthesizer]
+        pattern = AutoPattern(initial_agent=retriever, agents=agents)
+        groupchat, manager = pattern.prepare_group_chat(max_rounds=3, messages=[{"content": "Find info on remote work policy."}])
+
+        # Start the chat
+        retriever.initiate_chat(manager, message="User asked: What is the remote work policy?")
+
+</span><span class="hljs-attr">  best_practices:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Always provide clear tool descriptions and parameter schemas to ensure LLMs call retrieval tools correctly."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Preprocess and chunk documents appropriately for optimal retrieval quality—avoid excessively large or small chunks."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Test retrieval accuracy and tune embedding/model configs for your domain."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Monitor and log retrieval results to audit LLM responses and ensure proper grounding."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Keep retrieval and synthesis steps modular—use group patterns for complex workflows."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Manage vector DB storage and memory to avoid bloat, especially in multi-user or multi-session settings."</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">"Use dedicated document agents for scalable or production RAG systems."</span>
+
+<span class="hljs-attr">  related_concepts:</span>
+<span class="hljs-attr">    - name:</span> <span class="hljs-string">"Tool and Toolkit"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"Retrieval functions are registered as tools, enabling LLM function-calling for RAG. Use toolkits to manage multiple retrieval and synthesis utilities."</span>
+<span class="hljs-attr">    - name:</span> <span class="hljs-string">"ConversableAgent"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"The core abstraction that supports tool registration and interaction, serving as the backbone for RAG-capable agents."</span>
+<span class="hljs-attr">    - name:</span> <span class="hljs-string">"DocumentAgent"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"A specialized agent for RAG, abstracting vector store management, retrieval, and ingestion."</span>
+<span class="hljs-attr">    - name:</span> <span class="hljs-string">"GroupChat and Group Patterns"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"Enable multi-agent RAG workflows, separating retrieval and synthesis for more modular designs."</span>
+<span class="hljs-attr">    - name:</span> <span class="hljs-string">"LLMConfig"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"Standardizes model configuration for both retrieval and synthesis agents, ensuring consistent API usage and context management."</span>
+<span class="hljs-attr">    - name:</span> <span class="hljs-string">"Tool Interoperability"</span>
+<span class="hljs-attr">      description:</span> <span class="hljs-string">"Allows integration of retrieval tools from other ecosystems (e.g., LangChain) into the agent framework for RAG."</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="capabilities-and-composability.html" class="navigation navigation-prev " aria-label="Previous page: Capabilities and Composability">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="interoperability.html" class="navigation navigation-next " aria-label="Next page: Interoperability">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Retrieval Augmented Generation","level":"1.4.3","depth":2,"next":{"title":"Interoperability","level":"1.4.4","depth":2,"path":"advanced-topics/interoperability.md","ref":"advanced-topics/interoperability.md","articles":[]},"previous":{"title":"Capabilities and Composability","level":"1.4.2","depth":2,"path":"advanced-topics/capabilities-and-composability.md","ref":"advanced-topics/capabilities-and-composability.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false,"showSummary":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Your Name","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Documentation","language":"en","gitbook":"*"},"file":{"path":"advanced-topics/retrieval-augmented-generation.md","mtime":"2025-05-23T21:32:44.627Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-05-23T21:32:59.730Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
