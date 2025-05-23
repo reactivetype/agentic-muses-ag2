@@ -1,6 +1,9 @@
-plugins:
-- theme-default
-pluginsConfig:
-  theme-default:
-    showSummary: true
-title: Documentation
+{
+  "title": "Documentation",
+  "plugins": ["theme-default"],
+  "pluginsConfig": {
+    "theme-default": {
+      "showSummary": true
+    }
+  }
+}
