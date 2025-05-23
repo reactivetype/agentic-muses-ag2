@@ -16,10 +16,14 @@ jobs:
         with:
           node-version: '18'
           
-      - name: Install Honkit
+      - name: Install Honkit and plugins
         run: |
           npm install -g honkit@latest
           npm install honkit@latest
+          npm install honkit-plugin-theme-default
+          npm install honkit-plugin-highlight
+          npm install honkit-plugin-search
+          npm install honkit-plugin-sharing
           
       - name: Build Documentation
         run: |

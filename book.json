@@ -7,16 +7,16 @@
     "summary": "SUMMARY.md"
   },
   "plugins": [
-    "theme-default",
-    "highlight",
-    "search",
-    "sharing"
+    "honkit-plugin-theme-default",
+    "honkit-plugin-highlight",
+    "honkit-plugin-search",
+    "honkit-plugin-sharing"
   ],
   "pluginsConfig": {
-    "theme-default": {
+    "honkit-plugin-theme-default": {
       "showSummary": true
     },
-    "sharing": {
+    "honkit-plugin-sharing": {
       "facebook": true,
       "twitter": true,
       "google": false,
