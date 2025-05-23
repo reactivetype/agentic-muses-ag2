@@ -1,0 +1,6 @@
+plugins:
+- theme-default
+pluginsConfig:
+  theme-default:
+    showSummary: true
+title: Documentation
