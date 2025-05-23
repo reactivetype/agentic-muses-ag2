@@ -14,15 +14,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '18'
           
       - name: Install Honkit
         run: |
-          npm install -g honkit
+          npm install -g honkit@latest
+          npm install honkit@latest
           
       - name: Build Documentation
         run: |
-          honkit build ./ ./_book
+          npx honkit build ./ ./_book
           
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
