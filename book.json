@@ -1,9 +1,29 @@
 {
   "title": "Documentation",
-  "plugins": ["theme-default"],
+  "author": "Your Name",
+  "language": "en",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "theme-default",
+    "highlight",
+    "search",
+    "sharing"
+  ],
   "pluginsConfig": {
     "theme-default": {
       "showSummary": true
+    },
+    "sharing": {
+      "facebook": true,
+      "twitter": true,
+      "google": false,
+      "weibo": false,
+      "instapaper": false,
+      "vk": false,
+      "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
     }
   }
 }
