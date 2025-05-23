@@ -12,32 +12,35 @@ permissions:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          
+      
       - name: Install Honkit and plugins
         run: |
-          npm install -g honkit@latest
-          npm install honkit@latest
-          npm install gitbook-plugin-theme-default
-          npm install gitbook-plugin-highlight
-          
-      - name: Build Documentation
-        run: |
-          npx honkit build ./ ./_book
-          
+          npm install -g honkit
+          npm install gitbook-plugin-theme-default gitbook-plugin-highlight
+      
+      - name: Build documentation
+        run: honkit build ./ ./_book
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './_book'
+      
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_book
+        uses: actions/deploy-pages@v2
