@@ -11,8 +11,7 @@
     "highlight",
     "search",
     "fontsettings",
-    "livereload",
-    "back-to-top-button"
+    "livereload"
   ],
   "pluginsConfig": {
     "theme-default": {
