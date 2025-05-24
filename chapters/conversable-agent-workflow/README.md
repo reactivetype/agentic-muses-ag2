@@ -1,19 +1,22 @@
 # Conversable Agent Workflow
 
-Explore reply registration, conversation flow, and agent interaction patterns
+This chapter explores the workflow and communication patterns of conversable agents.
 
 ## Prerequisites
 
-* Foundations of Agents and Messages
+- Understanding of agent protocols
+- Knowledge of message types
+- Familiarity with async programming
 
 ## Learning Objectives
 
-* Register and trigger reply functions in agents
-* Control conversation flow with message triggers
-* Utilize human input modes for diverse workflows
+- Master reply function registration
+- Understand chat message flow
+- Learn about different human input modes
+- Implement effective agent communication
 
-## Sections
+## Chapter Structure
 
-* [Reply function registration](chapters/conversable-agent-workflow/reply-function-registration.md)
-* [Chat message flow](chapters/conversable-agent-workflow/chat-message-flow.md)
-* [Human input modes](chapters/conversable-agent-workflow/human-input-modes.md)
+* [Reply function registration](chapters/conversable-agent-workflow/reply-function-registration.html)
+* [Chat message flow](chapters/conversable-agent-workflow/chat-message-flow.html)
+* [Human input modes](chapters/conversable-agent-workflow/human-input-modes.html)

@@ -1,21 +1,23 @@
 # Foundations of Agents and Messages
 
-Introduction to agent protocols and message structures for communication
+This chapter covers the fundamental concepts and components that form the basis of the agent system.
 
 ## Prerequisites
 
-* Basic Python programming
-* OOP concepts
+- Basic understanding of Python programming
+- Familiarity with object-oriented programming concepts
+- Knowledge of asynchronous programming in Python
 
 ## Learning Objectives
 
-* Understand the agent protocol for communication
-* Distinguish between different agent classes
-* Recognize the structure of messages and events
+- Understand the core components of the agent system
+- Learn about message types and their roles
+- Master the agent protocol and its implementation
+- Explore different agent types and their use cases
 
-## Sections
+## Chapter Structure
 
-* [Agent protocol](chapters/foundations-of-agents-and-messages/agent-protocol.md)
-* [LLMAgent](chapters/foundations-of-agents-and-messages/llmagent.md)
-* [ConversableAgent](chapters/foundations-of-agents-and-messages/conversableagent.md)
-* [BaseMessage and message serialization](chapters/foundations-of-agents-and-messages/basemessage-and-message-serialization.md)
+* [Agent Protocol](chapters/foundations-of-agents-and-messages/agent-protocol.html)
+* [LLMAgent](chapters/foundations-of-agents-and-messages/llmagent.html)
+* [ConversableAgent](chapters/foundations-of-agents-and-messages/conversableagent.html)
+* [BaseMessage and message serialization](chapters/foundations-of-agents-and-messages/basemessage-and-message-serialization.html)
