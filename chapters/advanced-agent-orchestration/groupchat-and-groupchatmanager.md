@@ -107,7 +107,7 @@ manager = HandoffGroupChatManager(groupchat=group_chat)
 
 ## Best Practices
 
-- **Define Clear Agent Roles:** Clearly specify each agent’s expertise and responsibilities to avoid redundant or conflicting responses.
+- **Define Clear Agent Roles:** Clearly specify each agent's expertise and responsibilities to avoid redundant or conflicting responses.
 - **Customize Speaker Logic:** Tailor the `select_speaker` logic to match your application's needs, such as keyword triggers, user roles, or agent confidence.
 - **Limit Rounds:** Set a sensible `max_rounds` to prevent infinite loops and improve efficiency.
 - **Handle Handoffs Gracefully:** Ensure context is passed cleanly between agents during transitions for seamless user experience.
@@ -126,12 +126,12 @@ manager = HandoffGroupChatManager(groupchat=group_chat)
 
 ## Related Concepts
 
-- [LLM Configuration and Model Clients](./llm-configuration.md)
-- [Tool-augmented Agents](./tool-augmented-agents.md)
-- [AgentExecutor](./agent-executor.md)
-- [Prompt Engineering](./prompt-engineering.md)
+- [LLM Configuration and Model Clients](./llm-configuration.html)
+- [Tool-augmented Agents](./tool-augmented-agents.html)
+- [AgentExecutor](./agent-executor.html)
+- [Prompt Engineering](./prompt-engineering.html)
+- [State Management and Memory](./state-management.html)
 - [Multi-Agent Collaboration Patterns](https://python.langchain.com/docs/agents/multi_agent)
-- [State Management and Memory](./state-management.md)
 - [LangChain Experimental Agents Documentation](https://python.langchain.com/docs/experimental/groupchat/)
 
 ---

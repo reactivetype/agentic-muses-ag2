@@ -6,7 +6,7 @@ Dependency injection is a design pattern that allows for the decoupling of compo
 
 ## Explanation
 
-In a Conversable Agent Workflow, tools are functions registered to the agent that perform specific tasks. Sometimes, these functions require dependencies—like access to the agent’s context, configuration parameters, or external services. Instead of passing these dependencies manually every time, you can use **Depends** as a declarative mechanism to specify dependencies, and the agent runtime will resolve and inject them automatically.
+In a Conversable Agent Workflow, tools are functions registered to the agent that perform specific tasks. Sometimes, these functions require dependencies—like access to the agent's context, configuration parameters, or external services. Instead of passing these dependencies manually every time, you can use **Depends** as a declarative mechanism to specify dependencies, and the agent runtime will resolve and inject them automatically.
 
 ### How Does `Depends` Work?
 
@@ -97,13 +97,13 @@ agent = Agent(toolkits=[MyToolkit()])
 
 ## Related Concepts
 
-- [Conversable Agent Workflow](./conversable-agent-workflow.md)
-- [Toolkit and Tool Registration](./toolkit-tool-registration.md)
-- [Context Injection](./context-injection.md)
-- [Tool Function Design](./tool-function-design.md)
+- [Conversable Agent Workflow](./conversable-agent-workflow.html)
+- [Toolkit and Tool Registration](./toolkit-tool-registration.html)
+- [Context Injection](./context-injection.html)
+- [Tool Function Design](./tool-function-design.html)
 - [FastAPI Dependency Injection](https://fastapi.tiangolo.com/tutorial/dependencies/)
 - [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control)
-- [Unit Testing with Dependency Injection](./unit-testing-di.md)
+- [Unit Testing with Dependency Injection](./unit-testing-di.html)
 
 ---
 

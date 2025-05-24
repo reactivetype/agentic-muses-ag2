@@ -2,8 +2,32 @@
   "title": "Agentic Documentation",
   "author": "AutoGen Team",
   "language": "en",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
   "plugins": [
     "theme-default",
-    "highlight"
-  ]
+    "highlight",
+    "search",
+    "sharing",
+    "fontsettings",
+    "livereload",
+    "back-to-top-button"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showSummary": true,
+      "showLevel": true
+    },
+    "sharing": {
+      "facebook": true,
+      "twitter": true,
+      "google": false,
+      "weibo": false,
+      "instapaper": false,
+      "vk": false,
+      "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+    }
+  }
 }

@@ -1,4 +1,4 @@
-# TransformMessages and message transforms
+# TransformMessages and Message Transforms
 
 ## Overview
 
@@ -111,11 +111,11 @@ agent.add_incoming_transform(topic_routing_transform)
 
 ## Related Concepts
 
-- [Multimodal and Vision Capabilities](./multimodal-vision.md)
-- [Context Variables and Conditional Logic](./context-variables.md)
-- [Vector Memory and Retrieval](./vector-memory.md)
-- [Agent Middleware Patterns](./middleware-patterns.md)
-- [Composable Agent Architectures](./agent-composability.md)
+- [Multimodal and Vision Capabilities](./multimodal-vision.html)
+- [Context Variables and Conditional Logic](./context-variables.html)
+- [Vector Memory and Retrieval](./vector-memory.html)
+- [Agent Middleware Patterns](./middleware-patterns.html)
+- [Composable Agent Architectures](./agent-composability.html)
 
 **Further Reading:**
 

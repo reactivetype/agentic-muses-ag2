@@ -13,7 +13,7 @@ In advanced agent orchestration, **OnCondition** and **OnContextCondition** are 
 - **OnCondition**: Triggers a transition or action when a specified boolean expression or condition is met. The condition may reference current context variables, agent states, or external inputs.
 - **OnContextCondition**: Similar to OnCondition, but specifically focuses on expressions that involve context variables, such as user state, workflow progress, or shared memory between agents.
 
-**Context variables** are key-value pairs stored in a workflow’s context object. They allow agents to share information, track progress, or store temporary results. By updating and evaluating these variables, agents can influence each other’s behavior and orchestrate complex, adaptive flows.
+**Context variables** are key-value pairs stored in a workflow's context object. They allow agents to share information, track progress, or store temporary results. By updating and evaluating these variables, agents can influence each other's behavior and orchestrate complex, adaptive flows.
 
 ### How it Works
 
@@ -109,11 +109,11 @@ while not context["done"]:
 
 ## Related Concepts
 
-- [Context Variables](./context-variables.md)
-- [Agent Transition Management](./agent-transitions.md)
-- [Expression Languages for Orchestration](./expression-languages.md)
-- [Error Handling in Workflows](./error-handling.md)
-- [Advanced Agent Orchestration (Prerequisite)](./advanced-agent-orchestration.md)
-- [Looping and Iterative Flows](./looping-and-iteration.md)
+- [Context Variables](./context-variables.html)
+- [Agent Transition Management](./agent-transitions.html)
+- [Expression Languages for Orchestration](./expression-languages.html)
+- [Error Handling in Workflows](./error-handling.html)
+- [Advanced Agent Orchestration (Prerequisite)](./advanced-agent-orchestration.html)
+- [Looping and Iterative Flows](./looping-and-iteration.html)
 
-For further reading, consult the [official orchestration documentation](https://your-orchestrator-docs.example.com/) and see examples of [multi-agent workflows](./multi-agent-workflows.md).
+For more information on multi-agent workflows, see [Multi-Agent Workflows](./multi-agent-workflows.html).

@@ -1,4 +1,4 @@
-# OnCondition and nested chat transitions
+# OnCondition and Nested Chat Transitions
 
 ## Overview
 
@@ -159,13 +159,11 @@ AfterWork(
 
 ## Related Concepts
 
-- [Agent Group Patterns](agent-group-patterns.md)
-- [Swarm Coordination Strategies](swarm-coordination.md)
-- [Agent Capabilities and Composability](agent-capabilities.md)
-- [Advanced Agent Orchestration](advanced-agent-orchestration.md)
-- [Error Handling and Recovery in Agent Workflows](error-handling-in-agents.md)
-- [Composable Agent Workflows](composable-agent-workflows.md)
+- [Agent Group Patterns](agent-group-patterns.html)
+- [Swarm Coordination Strategies](swarm-coordination.html)
+- [Agent Capabilities and Composability](agent-capabilities.html)
+- [Advanced Agent Orchestration](advanced-agent-orchestration.html)
+- [Error Handling and Recovery in Agent Workflows](error-handling-in-agents.html)
+- [Composable Agent Workflows](composable-agent-workflows.html)
 
----
-
-For further reading, see the documentation on [Nested Transitions](nested-transitions.md) and [AfterWork Patterns](afterwork-patterns.md).
+For further reading, see the documentation on [Nested Transitions](nested-transitions.html) and [AfterWork Patterns](afterwork-patterns.html).
