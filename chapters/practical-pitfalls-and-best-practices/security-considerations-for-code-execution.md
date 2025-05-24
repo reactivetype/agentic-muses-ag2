@@ -1,4 +1,14 @@
-# Security considerations for code execution
+# Security Considerations for Code Execution
+
+Security is paramount when executing code in agent systems.
+
+## Related Concepts
+
+- [Error Handling](./error-handling-in-agent-orchestration.html)
+- [Testing and Logging](./testing-and-logging-strategies.html)
+- [Advanced Agent Orchestration](../advanced-agent-orchestration/README.html)
+- [Context Variables](../context-variables-and-conditional-logic/contextvariables.html)
+- [State Management](../context-variables-and-conditional-logic/StateManagement.html)
 
 ## Overview
 
@@ -119,17 +129,6 @@ docker run --rm -m 128m --cpus=0.5 --network=none -v $(pwd)/user_code.py:/usr/sr
 - Running code with administrator privileges
 - Ignoring failed subprocesses or missing timeouts
 - Omitting audit logs for executed code
-
----
-
-## Related Concepts
-
-- [Principle of Least Privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege)
-- [Sandboxing](https://en.wikipedia.org/wiki/Sandbox_(computer_security))
-- [Docker Security Best Practices](https://docs.docker.com/engine/security/security/)
-- [Input Validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
-- [Logging and Monitoring](https://owasp.org/www-project-logging/)
-- [Secure Dependency Management](https://owasp.org/www-community/vulnerabilities/Dependency_Management)
 
 ---
 
