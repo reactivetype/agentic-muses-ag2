@@ -3,8 +3,8 @@
   "author": "AutoGen Team",
   "language": "en",
   "structure": {
-    "readme": "README.md",
-    "summary": "SUMMARY.md"
+    "readme": "README.html",
+    "summary": "SUMMARY.html"
   },
   "plugins": [
     "theme-default",
