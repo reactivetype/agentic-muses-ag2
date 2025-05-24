@@ -17,6 +17,6 @@ This chapter covers how to configure and use different LLM providers in the syst
 
 ## Chapter Structure
 
-* [LLMConfig and LLMConfigEntry](llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html)
-* [ModelClient protocol](llm-configuration-and-model-clients/modelclient-protocol.html)
-* [Config list and filtering](llm-configuration-and-model-clients/config-list-and-filtering.html)
+* [LLMConfig and LLMConfigEntry](/llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html)
+* [ModelClient protocol](/llm-configuration-and-model-clients/modelclient-protocol.html)
+* [Config list and filtering](/llm-configuration-and-model-clients/config-list-and-filtering.html)

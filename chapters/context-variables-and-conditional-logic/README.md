@@ -17,7 +17,7 @@ This chapter covers how to manage context and implement conditional logic in age
 
 ## Chapter Structure
 
-* [ContextVariables](context-variables-and-conditional-logic/contextvariables.html)
-* [ContextCondition and AvailableCondition](context-variables-and-conditional-logic/contextcondition-and-availablecondition.html)
-* [OnCondition and OnContextCondition](context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html)
-* [ContextExpression](context-variables-and-conditional-logic/contextexpression.html)
+* [ContextVariables](/context-variables-and-conditional-logic/contextvariables.html)
+* [ContextCondition and AvailableCondition](/context-variables-and-conditional-logic/contextcondition-and-availablecondition.html)
+* [OnCondition and OnContextCondition](/context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html)
+* [ContextExpression](/context-variables-and-conditional-logic/contextexpression.html)

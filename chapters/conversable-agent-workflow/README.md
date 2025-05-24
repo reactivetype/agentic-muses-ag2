@@ -17,6 +17,6 @@ This chapter explores how agents communicate and handle conversations in the sys
 
 ## Chapter Structure
 
-* [Reply function registration](conversable-agent-workflow/reply-function-registration.html)
-* [Chat message flow](conversable-agent-workflow/chat-message-flow.html)
-* [Human input modes](conversable-agent-workflow/human-input-modes.html)
+* [Reply function registration](/conversable-agent-workflow/reply-function-registration.html)
+* [Chat message flow](/conversable-agent-workflow/chat-message-flow.html)
+* [Human input modes](/conversable-agent-workflow/human-input-modes.html)

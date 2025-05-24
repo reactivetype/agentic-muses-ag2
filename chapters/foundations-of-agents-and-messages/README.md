@@ -17,7 +17,7 @@ This chapter covers the core concepts and building blocks for creating agents an
 
 ## Chapter Structure
 
-* [Agent Protocol](foundations-of-agents-and-messages/agent-protocol.html)
-* [LLMAgent](foundations-of-agents-and-messages/llmagent.html)
-* [ConversableAgent](foundations-of-agents-and-messages/conversableagent.html)
-* [BaseMessage and message serialization](foundations-of-agents-and-messages/basemessage-and-message-serialization.html)
+* [Agent Protocol](/foundations-of-agents-and-messages/agent-protocol.html)
+* [LLMAgent](/foundations-of-agents-and-messages/llmagent.html)
+* [ConversableAgent](/foundations-of-agents-and-messages/conversableagent.html)
+* [BaseMessage and message serialization](/foundations-of-agents-and-messages/basemessage-and-message-serialization.html)
