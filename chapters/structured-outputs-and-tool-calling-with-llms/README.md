@@ -1,6 +1,6 @@
 # Structured Outputs and Tool Calling with LLMs
 
-This chapter covers structured output generation and tool calling in LLM interactions.
+This chapter covers how to handle structured outputs and tool calling in LLM interactions.
 
 ## Prerequisites
 
@@ -17,6 +17,6 @@ This chapter covers structured output generation and tool calling in LLM interac
 
 ## Chapter Structure
 
-* [Function and Tool schemas](chapters/structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html)
-* [Structured output formatting](chapters/structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html)
-* [Tool Call and Function Call Message Handling](chapters/structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html)
+* [Function and Tool schemas](structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html)
+* [Structured output formatting](structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html)
+* [Tool Call and Function Call Message Handling](structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html)
