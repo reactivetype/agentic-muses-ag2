@@ -1,4 +1,4 @@
 # Getting Started
 
-* [Installation](installation.md)
-* [Quick Start](quick-start.md)
+* [Installation](installation.html)
+* [Quick Start](quick-start.html)
