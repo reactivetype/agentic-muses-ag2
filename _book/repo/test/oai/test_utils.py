@@ -28,9 +28,9 @@ from ..conftest import MOCK_OPEN_AI_API_KEY
 
 # Example environment variables
 ENV_VARS = {
-    "OPENAI_API_KEY": "sk-********************",
-    "HUGGING_FACE_API_KEY": "**************************",
-    "ANOTHER_API_KEY": "1234567890234567890",
+    "OPENAI_API_KEY": "sk-placeholder-key",
+    "HUGGING_FACE_API_KEY": "hf-placeholder-key",
+    "ANOTHER_API_KEY": "placeholder-key",
 }
 
 # Example model to API key mappings
@@ -67,7 +67,7 @@ JSON_SAMPLE = """
     {
         "model": "gpt-35-turbo-v0301",
         "tags": ["gpt-3.5-turbo", "gpt35_turbo"],
-        "api_key": "Your Azure OAI API Key",
+        "api_key": "placeholder-key",
         "base_url": "https://deployment_name.openai.azure.com",
         "api_type": "azure",
         "api_version": "2024-02-01"
@@ -230,9 +230,9 @@ def test_config_list_openai_aoai():
 
         # Write sample data to the temporary files
         with open(openai_key_file, "w") as f:
-            f.write("sk-testkeyopenai123\nsk-testkeyopenai456")
+            f.write("sk-placeholder-key1\nsk-placeholder-key2")
         with open(aoai_key_file, "w") as f:
-            f.write("sk-testkeyaoai456")
+            f.write("sk-placeholder-key3")
         with open(openai_base_file, "w") as f:
             f.write("https://api.openai.com/v1\nhttps://api.openai.com/v1")
         with open(aoai_base_file, "w") as f:
@@ -242,10 +242,10 @@ def test_config_list_openai_aoai():
         config_list = autogen.config_list_openai_aoai(key_file_path=temp_dir)
         assert len(config_list) == 3
         expected_config_list = [
-            {"api_key": "sk-testkeyopenai123", "base_url": "https://api.openai.com/v1"},
-            {"api_key": "sk-testkeyopenai456", "base_url": "https://api.openai.com/v1"},
+            {"api_key": "sk-placeholder-key1", "base_url": "https://api.openai.com/v1"},
+            {"api_key": "sk-placeholder-key2", "base_url": "https://api.openai.com/v1"},
             {
-                "api_key": "sk-testkeyaoai456",
+                "api_key": "sk-placeholder-key3",
                 "base_url": "https://api.azure.com/v1",
                 "api_type": "azure",
                 "api_version": DEFAULT_AZURE_API_VERSION,
@@ -257,9 +257,9 @@ def test_config_list_openai_aoai():
 @patch(
     "os.environ",
     {
-        "OPENAI_API_KEY": "test_openai_key",
+        "OPENAI_API_KEY": "placeholder-key1",
         "OPENAI_API_BASE": "https://api.openai.com",
-        "AZURE_OPENAI_API_KEY": "test_aoai_key",
+        "AZURE_OPENAI_API_KEY": "placeholder-key2",
         "AZURE_OPENAI_API_BASE": "https://api.azure.com",
     },
 )
@@ -267,9 +267,9 @@ def test_config_list_openai_aoai_env_vars():
     # Test the config_list_openai_aoai function with environment variables set
     configs = autogen.oai.openai_utils.config_list_openai_aoai(key_file_path=None)
     assert len(configs) == 2
-    assert {"api_key": "test_openai_key", "base_url": "https://api.openai.com"} in configs
+    assert {"api_key": "placeholder-key1", "base_url": "https://api.openai.com"} in configs
     assert {
-        "api_key": "test_aoai_key",
+        "api_key": "placeholder-key2",
         "base_url": "https://api.azure.com",
         "api_type": "azure",
         "api_version": DEFAULT_AZURE_API_VERSION,
@@ -279,9 +279,9 @@ def test_config_list_openai_aoai_env_vars():
 @patch(
     "os.environ",
     {
-        "OPENAI_API_KEY": "test_openai_key\ntest_openai_key2",
+        "OPENAI_API_KEY": "placeholder-key1\nplaceholder-key2",
         "OPENAI_API_BASE": "https://api.openai.com\nhttps://api.openai.com/v2",
-        "AZURE_OPENAI_API_KEY": "test_aoai_key\ntest_aoai_key2",
+        "AZURE_OPENAI_API_KEY": "placeholder-key3\nplaceholder-key4",
         "AZURE_OPENAI_API_BASE": "https://api.azure.com\nhttps://api.azure.com/v2",
     },
 )
@@ -289,16 +289,16 @@ def test_config_list_openai_aoai_env_vars_multi():
     # Test the config_list_openai_aoai function with multiple environment variable values (new line separated)
     configs = autogen.oai.openai_utils.config_list_openai_aoai()
     assert len(configs) == 4
-    assert {"api_key": "test_openai_key", "base_url": "https://api.openai.com"} in configs
-    assert {"api_key": "test_openai_key2", "base_url": "https://api.openai.com/v2"} in configs
+    assert {"api_key": "placeholder-key1", "base_url": "https://api.openai.com"} in configs
+    assert {"api_key": "placeholder-key2", "base_url": "https://api.openai.com/v2"} in configs
     assert {
-        "api_key": "test_aoai_key",
+        "api_key": "placeholder-key3",
         "base_url": "https://api.azure.com",
         "api_type": "azure",
         "api_version": DEFAULT_AZURE_API_VERSION,
     } in configs
     assert {
-        "api_key": "test_aoai_key2",
+        "api_key": "placeholder-key4",
         "base_url": "https://api.azure.com/v2",
         "api_type": "azure",
         "api_version": DEFAULT_AZURE_API_VERSION,
