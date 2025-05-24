@@ -86,7 +86,7 @@ toolkit.register(create_database_tool(database_instance))
 
 - **Keep Tools Atomic:** Tools should do one thing well to maximize reuse.
 - **Define Clear Interfaces:** Specify input and output types for tools to aid agent reasoning and validation.
-- **Inject, Don’t Hardcode:** Use dependency and context injection to keep tools decoupled from their environment.
+- **Inject, Don't Hardcode:** Use dependency and context injection to keep tools decoupled from their environment.
 - **Document Tools Thoroughly:** Use descriptions and type annotations to help agents and developers understand tool capabilities.
 - **Organize Tools Logically:** Group related tools in toolkits for easier management and discovery.
 - **Handle Errors Gracefully:** Ensure tools return informative errors or exceptions for agent handling.
@@ -94,12 +94,12 @@ toolkit.register(create_database_tool(database_instance))
 
 ## Related Concepts
 
-- [Conversable Agent Workflow](./Conversable-Agent-Workflow.md)
+- [Conversable Agent Workflow](./Conversable-Agent-Workflow.html)
 - [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection)
 - [Toolkit Design Pattern](https://en.wikipedia.org/wiki/Toolkit_(software))
-- [Tool Registration](./Tool-Registration.md)
-- [Context Management](./Context-Management.md)
-- [Agent Function Calling](./Agent-Function-Calling.md)
-- [Testing Tools and Agents](./Agent-Testing.md)
+- [Tool Registration](./Tool-Registration.html)
+- [Context Management](./Context-Management.html)
+- [Agent Function Calling](./Agent-Function-Calling.html)
+- [Testing Tools and Agents](./Agent-Testing.html)
 
-For further reading on dependency injection, see [Martin Fowler’s article](https://martinfowler.com/articles/injection.html).
+For further reading on dependency injection, see [Martin Fowler's article](https://martinfowler.com/articles/injection.html).

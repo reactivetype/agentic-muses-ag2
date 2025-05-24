@@ -1,4 +1,4 @@
-# Speaker selection methods
+# Speaker Selection Methods
 
 ## Overview
 
@@ -102,11 +102,11 @@ def select_next_speaker(conversation_state):
 
 ## Related Concepts
 
-- [Agent orchestration patterns](./agent-orchestration-patterns.md)
-- [LLM configuration and model clients](./llm-configuration.md)
-- [Task routing strategies](./task-routing.md)
-- [Conversation state management](./conversation-state.md)
-- [Human-in-the-loop orchestration](./human-in-the-loop.md)
-- [Handoff and after work transitions](./handoff-and-afterwork.md)
+- [Agent orchestration patterns](./agent-orchestration-patterns.html)
+- [LLM configuration and model clients](./llm-configuration.html)
+- [Task routing strategies](./task-routing.html)
+- [Conversation state management](./conversation-state.html)
+- [Human-in-the-loop orchestration](./human-in-the-loop.html)
+- [Handoff and after work transitions](./handoff-and-afterwork.html)
 
-For a deeper dive on orchestration and advanced agent design, see [Multi-Agent Collaboration Patterns](./multi-agent-collaboration.md).
+For a deeper dive on orchestration and advanced agent design, see [Multi-Agent Collaboration Patterns](./multi-agent-collaboration.html).
