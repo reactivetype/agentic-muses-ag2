@@ -1,6 +1,6 @@
 # LLM Configuration and Model Clients
 
-This chapter covers the configuration and management of LLM models and their clients.
+This chapter covers how to configure and use different LLM providers in the system.
 
 ## Prerequisites
 
@@ -17,6 +17,6 @@ This chapter covers the configuration and management of LLM models and their cli
 
 ## Chapter Structure
 
-* [LLMConfig and LLMConfigEntry](chapters/llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html)
-* [ModelClient protocol](chapters/llm-configuration-and-model-clients/modelclient-protocol.html)
-* [Config list and filtering](chapters/llm-configuration-and-model-clients/config-list-and-filtering.html)
+* [LLMConfig and LLMConfigEntry](llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html)
+* [ModelClient protocol](llm-configuration-and-model-clients/modelclient-protocol.html)
+* [Config list and filtering](llm-configuration-and-model-clients/config-list-and-filtering.html)

@@ -1,6 +1,6 @@
 # Context Variables and Conditional Logic
 
-This chapter explores context management and conditional logic in agent workflows.
+This chapter covers how to manage context and implement conditional logic in agent workflows.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ This chapter explores context management and conditional logic in agent workflow
 
 ## Chapter Structure
 
-* [ContextVariables](chapters/context-variables-and-conditional-logic/contextvariables.html)
-* [ContextCondition and AvailableCondition](chapters/context-variables-and-conditional-logic/contextcondition-and-availablecondition.html)
-* [OnCondition and OnContextCondition](chapters/context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html)
-* [ContextExpression](chapters/context-variables-and-conditional-logic/contextexpression.html)
+* [ContextVariables](context-variables-and-conditional-logic/contextvariables.html)
+* [ContextCondition and AvailableCondition](context-variables-and-conditional-logic/contextcondition-and-availablecondition.html)
+* [OnCondition and OnContextCondition](context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html)
+* [ContextExpression](context-variables-and-conditional-logic/contextexpression.html)

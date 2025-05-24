@@ -1,6 +1,6 @@
 # Practical Pitfalls and Best Practices
 
-This chapter covers common challenges and best practices in agent development.
+This chapter covers common pitfalls and best practices for building reliable agent systems.
 
 ## Prerequisites
 
@@ -17,6 +17,6 @@ This chapter covers common challenges and best practices in agent development.
 
 ## Chapter Structure
 
-* [Error handling in agent orchestration](chapters/practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.html)
-* [Security considerations for code execution](chapters/practical-pitfalls-and-best-practices/security-considerations-for-code-execution.html)
-* [Testing and logging strategies](chapters/practical-pitfalls-and-best-practices/testing-and-logging-strategies.html)
+* [Error handling in agent orchestration](practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.html)
+* [Security considerations for code execution](practical-pitfalls-and-best-practices/security-considerations-for-code-execution.html)
+* [Testing and logging strategies](practical-pitfalls-and-best-practices/testing-and-logging-strategies.html)

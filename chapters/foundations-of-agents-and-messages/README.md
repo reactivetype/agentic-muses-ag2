@@ -1,6 +1,6 @@
 # Foundations of Agents and Messages
 
-This chapter covers the fundamental concepts and components that form the basis of the agent system.
+This chapter covers the core concepts and building blocks for creating agents and handling messages in the system.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ This chapter covers the fundamental concepts and components that form the basis 
 
 ## Chapter Structure
 
-* [Agent Protocol](chapters/foundations-of-agents-and-messages/agent-protocol.html)
-* [LLMAgent](chapters/foundations-of-agents-and-messages/llmagent.html)
-* [ConversableAgent](chapters/foundations-of-agents-and-messages/conversableagent.html)
-* [BaseMessage and message serialization](chapters/foundations-of-agents-and-messages/basemessage-and-message-serialization.html)
+* [Agent Protocol](foundations-of-agents-and-messages/agent-protocol.html)
+* [LLMAgent](foundations-of-agents-and-messages/llmagent.html)
+* [ConversableAgent](foundations-of-agents-and-messages/conversableagent.html)
+* [BaseMessage and message serialization](foundations-of-agents-and-messages/basemessage-and-message-serialization.html)
