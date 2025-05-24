@@ -9,7 +9,6 @@
   "plugins": [
     "theme-default",
     "highlight",
-    "search",
     "fontsettings",
     "livereload"
   ],
