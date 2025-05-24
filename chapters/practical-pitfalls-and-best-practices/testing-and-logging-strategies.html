@@ -1,0 +1,1243 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Testing and logging strategies · Agentic Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="AutoGen Team">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="security-considerations-for-code-execution.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../foundations-of-agents-and-messages/">
+            
+                <a href="../foundations-of-agents-and-messages/">
+            
+                    
+                    Foundations of Agents and Messages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../foundations-of-agents-and-messages/agent-protocol.html">
+            
+                <a href="../foundations-of-agents-and-messages/agent-protocol.html">
+            
+                    
+                    Agent protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../foundations-of-agents-and-messages/llmagent.html">
+            
+                <a href="../foundations-of-agents-and-messages/llmagent.html">
+            
+                    
+                    LLMAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../foundations-of-agents-and-messages/conversableagent.html">
+            
+                <a href="../foundations-of-agents-and-messages/conversableagent.html">
+            
+                    
+                    ConversableAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../foundations-of-agents-and-messages/basemessage-and-message-serialization.html">
+            
+                <a href="../foundations-of-agents-and-messages/basemessage-and-message-serialization.html">
+            
+                    
+                    BaseMessage and message serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../conversable-agent-workflow/">
+            
+                <a href="../conversable-agent-workflow/">
+            
+                    
+                    Conversable Agent Workflow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../conversable-agent-workflow/reply-function-registration.html">
+            
+                <a href="../conversable-agent-workflow/reply-function-registration.html">
+            
+                    
+                    Reply function registration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../conversable-agent-workflow/chat-message-flow.html">
+            
+                <a href="../conversable-agent-workflow/chat-message-flow.html">
+            
+                    
+                    Chat message flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../conversable-agent-workflow/human-input-modes.html">
+            
+                <a href="../conversable-agent-workflow/human-input-modes.html">
+            
+                    
+                    Human input modes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../tools-and-dependency-injection/">
+            
+                <a href="../tools-and-dependency-injection/">
+            
+                    
+                    Tools and Dependency Injection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../tools-and-dependency-injection/tool-abstraction.html">
+            
+                <a href="../tools-and-dependency-injection/tool-abstraction.html">
+            
+                    
+                    Tool abstraction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../tools-and-dependency-injection/toolkit.html">
+            
+                <a href="../tools-and-dependency-injection/toolkit.html">
+            
+                    
+                    Toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../tools-and-dependency-injection/dependency-injection-with-depends.html">
+            
+                <a href="../tools-and-dependency-injection/dependency-injection-with-depends.html">
+            
+                    
+                    Dependency injection with Depends
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../tools-and-dependency-injection/context-parameter-injection.html">
+            
+                <a href="../tools-and-dependency-injection/context-parameter-injection.html">
+            
+                    
+                    Context parameter injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../llm-configuration-and-model-clients/">
+            
+                <a href="../llm-configuration-and-model-clients/">
+            
+                    
+                    LLM Configuration and Model Clients
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html">
+            
+                <a href="../llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html">
+            
+                    
+                    LLMConfig and LLMConfigEntry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../llm-configuration-and-model-clients/modelclient-protocol.html">
+            
+                <a href="../llm-configuration-and-model-clients/modelclient-protocol.html">
+            
+                    
+                    ModelClient protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../llm-configuration-and-model-clients/config-list-and-filtering.html">
+            
+                <a href="../llm-configuration-and-model-clients/config-list-and-filtering.html">
+            
+                    
+                    Config list and filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../advanced-agent-orchestration/">
+            
+                <a href="../advanced-agent-orchestration/">
+            
+                    
+                    Advanced Agent Orchestration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../advanced-agent-orchestration/groupchat-and-groupchatmanager.html">
+            
+                <a href="../advanced-agent-orchestration/groupchat-and-groupchatmanager.html">
+            
+                    
+                    GroupChat and GroupChatManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../advanced-agent-orchestration/patterns-for-orchestration-(auto,-manual,-roundrobin,-random">
+            
+                <span>
+            
+                    
+                    Patterns for orchestration (Auto, Manual, RoundRobin, Random)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../advanced-agent-orchestration/speaker-selection-methods.html">
+            
+                <a href="../advanced-agent-orchestration/speaker-selection-methods.html">
+            
+                    
+                    Speaker selection methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../advanced-agent-orchestration/transitiontarget-and-handoff-conditions.html">
+            
+                <a href="../advanced-agent-orchestration/transitiontarget-and-handoff-conditions.html">
+            
+                    
+                    TransitionTarget and handoff conditions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../context-variables-and-conditional-logic/">
+            
+                <a href="../context-variables-and-conditional-logic/">
+            
+                    
+                    Context Variables and Conditional Logic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../context-variables-and-conditional-logic/contextvariables.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextvariables.html">
+            
+                    
+                    ContextVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../context-variables-and-conditional-logic/contextcondition-and-availablecondition.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextcondition-and-availablecondition.html">
+            
+                    
+                    ContextCondition and AvailableCondition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html">
+            
+                <a href="../context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html">
+            
+                    
+                    OnCondition and OnContextCondition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../context-variables-and-conditional-logic/contextexpression.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextexpression.html">
+            
+                    
+                    ContextExpression
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tool-and-function-interoperability/">
+            
+                <a href="../tool-and-function-interoperability/">
+            
+                    
+                    Tool and Function Interoperability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tool-and-function-interoperability/interoperable-protocol.html">
+            
+                <a href="../tool-and-function-interoperability/interoperable-protocol.html">
+            
+                    
+                    Interoperable protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../tool-and-function-interoperability/interoperability-registry.html">
+            
+                <a href="../tool-and-function-interoperability/interoperability-registry.html">
+            
+                    
+                    Interoperability registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../tool-and-function-interoperability/langchain-and-crewai-tool-conversion.html">
+            
+                <a href="../tool-and-function-interoperability/langchain-and-crewai-tool-conversion.html">
+            
+                    
+                    LangChain and CrewAI tool conversion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../tool-and-function-interoperability/pydantic-ai-tool-integration.html">
+            
+                <a href="../tool-and-function-interoperability/pydantic-ai-tool-integration.html">
+            
+                    
+                    Pydantic AI tool integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../retrieval-augmented-generation-and-vector-databases/">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/">
+            
+                    
+                    Retrieval Augmented Generation and Vector Databases
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../retrieval-augmented-generation-and-vector-databases/retrieveuserproxyagent.html">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/retrieveuserproxyagent.html">
+            
+                    
+                    RetrieveUserProxyAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../retrieval-augmented-generation-and-vector-databases/vectordb-protocol.html">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/vectordb-protocol.html">
+            
+                    
+                    VectorDB protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../retrieval-augmented-generation-and-vector-databases/chromadb-pgvector-qdrant-mongodb-integrations.html">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/chromadb-pgvector-qdrant-mongodb-integrations.html">
+            
+                    
+                    ChromaDB PGVector Qdrant MongoDB integrations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../retrieval-augmented-generation-and-vector-databases/querying-and-chunking-strategies.html">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/querying-and-chunking-strategies.html">
+            
+                    
+                    Querying and chunking strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../structured-outputs-and-tool-calling-with-llms/">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/">
+            
+                    
+                    Structured Outputs and Tool Calling with LLMs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html">
+            
+                    
+                    Function and Tool schemas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html">
+            
+                    
+                    Structured output formatting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html">
+            
+                    
+                    Tool call and function call message handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../multimodal-and-vision-capabilities/">
+            
+                <a href="../multimodal-and-vision-capabilities/">
+            
+                    
+                    Multimodal and Vision Capabilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../multimodal-and-vision-capabilities/multimodalconversableagent.html">
+            
+                <a href="../multimodal-and-vision-capabilities/multimodalconversableagent.html">
+            
+                    
+                    MultimodalConversableAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../multimodal-and-vision-capabilities/visioncapability.html">
+            
+                <a href="../multimodal-and-vision-capabilities/visioncapability.html">
+            
+                    
+                    VisionCapability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../multimodal-and-vision-capabilities/image-generation-and-captioning-tools.html">
+            
+                <a href="../multimodal-and-vision-capabilities/image-generation-and-captioning-tools.html">
+            
+                    
+                    Image generation and captioning tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../multimodal-and-vision-capabilities/content-formatting-for-images.html">
+            
+                <a href="../multimodal-and-vision-capabilities/content-formatting-for-images.html">
+            
+                    
+                    Content formatting for images
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../agent-capabilities-and-composability/">
+            
+                <a href="../agent-capabilities-and-composability/">
+            
+                    
+                    Agent Capabilities and Composability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../agent-capabilities-and-composability/agentcapability-base-class.html">
+            
+                <a href="../agent-capabilities-and-composability/agentcapability-base-class.html">
+            
+                    
+                    AgentCapability base class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../agent-capabilities-and-composability/teachability-and-memory.html">
+            
+                <a href="../agent-capabilities-and-composability/teachability-and-memory.html">
+            
+                    
+                    Teachability and memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../agent-capabilities-and-composability/toolscapability-composition.html">
+            
+                <a href="../agent-capabilities-and-composability/toolscapability-composition.html">
+            
+                    
+                    ToolsCapability composition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../agent-capabilities-and-composability/transformmessages-and-message-transforms.html">
+            
+                <a href="../agent-capabilities-and-composability/transformmessages-and-message-transforms.html">
+            
+                    
+                    TransformMessages and message transforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../group-and-swarm-agent-patterns/">
+            
+                <a href="../group-and-swarm-agent-patterns/">
+            
+                    
+                    Group and Swarm Agent Patterns
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../group-and-swarm-agent-patterns/swarmagent-and-afterwork.html">
+            
+                <a href="../group-and-swarm-agent-patterns/swarmagent-and-afterwork.html">
+            
+                    
+                    SwarmAgent and AfterWork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../group-and-swarm-agent-patterns/oncondition-and-nested-chat-transitions.html">
+            
+                <a href="../group-and-swarm-agent-patterns/oncondition-and-nested-chat-transitions.html">
+            
+                    
+                    OnCondition and nested chat transitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../group-and-swarm-agent-patterns/pattern-classes-for-orchestration.html">
+            
+                <a href="../group-and-swarm-agent-patterns/pattern-classes-for-orchestration.html">
+            
+                    
+                    Pattern classes for orchestration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Practical Pitfalls and Best Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="error-handling-in-agent-orchestration.html">
+            
+                <a href="error-handling-in-agent-orchestration.html">
+            
+                    
+                    Error handling in agent orchestration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="security-considerations-for-code-execution.html">
+            
+                <a href="security-considerations-for-code-execution.html">
+            
+                    
+                    Security considerations for code execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14.3" data-path="testing-and-logging-strategies.html">
+            
+                <a href="testing-and-logging-strategies.html">
+            
+                    
+                    Testing and logging strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Testing and logging strategies</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="testing-and-logging-strategies">Testing and logging strategies</h1>
+<h2 id="overview">Overview</h2>
+<p>Testing and logging are critical components in the lifecycle of multi-agent systems. Effective testing ensures that agents behave as expected under various scenarios, while comprehensive logging provides visibility into their actions, enabling easier debugging, monitoring, and auditing. Together, these strategies help maintain security, reliability, and scalability in complex agent workflows.</p>
+<hr></hr>
+<h2 id="explanation">Explanation</h2>
+<h3 id="1-testing-in-multi-agent-workflows">1. <strong>Testing in Multi-Agent Workflows</strong></h3>
+<p>Testing multi-agent systems involves more than just verifying individual components. It requires validating the interactions, communication, and coordination among agents, as well as the integration with external tools and APIs. Key aspects include:</p>
+<ul>
+<li><strong>Unit Testing:</strong> Isolate and test individual agent functions.</li>
+<li><strong>Integration Testing:</strong> Test interactions among agents and external services.</li>
+<li><strong>End-to-End Testing:</strong> Simulate real-world workflows and scenarios.</li>
+<li><strong>Security Testing:</strong> Ensure agents handle sensitive data and tool execution securely.</li>
+</ul>
+<p>Automated tests with clear assertions and simulated environments (mocks/stubs) are essential. Given the dynamic nature of multi-agent workflows, tests should cover edge cases such as message loss, out-of-order execution, and failed tool invocations.</p>
+<h3 id="2-logging-and-monitoring">2. <strong>Logging and Monitoring</strong></h3>
+<p>Robust logging provides detailed records of agent activities, decisions, and errors. This is vital for:</p>
+<ul>
+<li><strong>Debugging:</strong> Trace issues in complex agent interactions.</li>
+<li><strong>Auditing:</strong> Maintain security and compliance.</li>
+<li><strong>Monitoring:</strong> Detect anomalies or failures in production.</li>
+</ul>
+<p>Logging strategies should:</p>
+<ul>
+<li>Capture context: agent ID, timestamps, actions, tool invocations, and responses.</li>
+<li>Differentiate log levels (INFO, WARNING, ERROR, DEBUG).</li>
+<li>Avoid logging sensitive data.</li>
+</ul>
+<p>Centralized log aggregation (using tools like ELK stack, Datadog, or CloudWatch) and real-time monitoring dashboards help maintain operational visibility.</p>
+<hr></hr>
+<h2 id="examples">Examples</h2>
+<h3 id="example-1-unit-testing-an-agents-decision-logic">Example 1: <strong>Unit Testing an Agent’s Decision Logic</strong></h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> unittest
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TestAgentDecision</span>(unittest.TestCase):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">test_should_execute_tool</span>(<span class="hljs-params">self</span>):
+        agent = MyAgent()
+        input_data = {<span class="hljs-string">"intent"</span>: <span class="hljs-string">"search"</span>, <span class="hljs-string">"query"</span>: <span class="hljs-string">"weather"</span>}
+        decision = agent.should_execute_tool(input_data)
+        <span class="hljs-variable language_">self</span>.assertTrue(decision)
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    unittest.main()
+</code></pre>
+<h3 id="example-2-mocking-tool-execution-in-integration-tests">Example 2: <strong>Mocking Tool Execution in Integration Tests</strong></h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> unittest.mock <span class="hljs-keyword">import</span> patch
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">test_agent_tool_interaction</span>():
+    agent = MyAgent()
+    <span class="hljs-keyword">with</span> patch(<span class="hljs-string">'tools.weather_api.get_weather'</span>) <span class="hljs-keyword">as</span> mock_get_weather:
+        mock_get_weather.return_value = {<span class="hljs-string">"temp"</span>: <span class="hljs-number">22</span>, <span class="hljs-string">"unit"</span>: <span class="hljs-string">"C"</span>}
+        result = agent.process_request(<span class="hljs-string">"What's the weather?"</span>)
+        <span class="hljs-keyword">assert</span> <span class="hljs-string">"22°C"</span> <span class="hljs-keyword">in</span> result
+</code></pre>
+<h3 id="example-3-structured-logging-for-agent-actions">Example 3: <strong>Structured Logging for Agent Actions</strong></h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> logging
+<span class="hljs-keyword">import</span> json
+
+logging.basicConfig(
+    level=logging.INFO,
+    <span class="hljs-built_in">format</span>=<span class="hljs-string">'%(asctime)s %(levelname)s %(message)s'</span>
+)
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">log_agent_action</span>(<span class="hljs-params">agent_id, action, details</span>):
+    logging.info(json.dumps({
+        <span class="hljs-string">"agent_id"</span>: agent_id,
+        <span class="hljs-string">"action"</span>: action,
+        <span class="hljs-string">"details"</span>: details
+    }))
+
+<span class="hljs-comment"># Usage</span>
+log_agent_action(
+    agent_id=<span class="hljs-string">"agent_123"</span>,
+    action=<span class="hljs-string">"tool_invocation"</span>,
+    details={<span class="hljs-string">"tool"</span>: <span class="hljs-string">"search"</span>, <span class="hljs-string">"query"</span>: <span class="hljs-string">"python logging"</span>}
+)
+</code></pre>
+<h3 id="example-4-masking-sensitive-data-in-logs">Example 4: <strong>Masking Sensitive Data in Logs</strong></h3>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">mask_sensitive</span>(<span class="hljs-params">data</span>):
+    <span class="hljs-keyword">if</span> <span class="hljs-string">'api_key'</span> <span class="hljs-keyword">in</span> data:
+        data[<span class="hljs-string">'api_key'</span>] = <span class="hljs-string">'***REDACTED***'</span>
+    <span class="hljs-keyword">return</span> data
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">log_tool_execution</span>(<span class="hljs-params">agent_id, tool, params</span>):
+    safe_params = mask_sensitive(params.copy())
+    logging.info(<span class="hljs-string">f"Agent <span class="hljs-subst">{agent_id}</span> invoked <span class="hljs-subst">{tool}</span> with params <span class="hljs-subst">{safe_params}</span>"</span>)
+</code></pre>
+<hr></hr>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li><strong>Write layered tests:</strong> Cover unit, integration, and end-to-end scenarios.</li>
+<li><strong>Use mocks and stubs:</strong> Simulate external dependencies and tool outputs.</li>
+<li><strong>Automate test runs:</strong> Integrate tests with CI/CD pipelines for continuous validation.</li>
+<li><strong>Implement structured logging:</strong> Use consistent, machine-readable log formats (e.g., JSON).</li>
+<li><strong>Separate log levels:</strong> Use appropriate logging levels (INFO, WARNING, ERROR, DEBUG).</li>
+<li><strong>Redact sensitive information:</strong> Never log secrets, credentials, or personal data.</li>
+<li><strong>Centralize logs:</strong> Aggregate logs from all agents for unified monitoring and alerting.</li>
+<li><strong>Monitor for anomalies:</strong> Set up alerts for unusual agent behaviors or failures.</li>
+<li><strong>Review logs regularly:</strong> Use logs for periodic audits and debugging.</li>
+<li><strong>Test for security:</strong> Verify that agents handle tool execution and data securely.</li>
+</ul>
+<p><strong>Common Pitfalls:</strong></p>
+<ul>
+<li>Insufficient test coverage for edge cases and error conditions.</li>
+<li>Logging sensitive data inadvertently.</li>
+<li>Ignoring failures in agent-to-agent or agent-to-tool communication.</li>
+<li>Lack of centralized log management.</li>
+<li>Overlooking security testing for tool and code execution.</li>
+</ul>
+<hr></hr>
+<h2 id="related-concepts">Related Concepts</h2>
+<ul>
+<li><a href="agent-communication.md">Agent communication patterns</a></li>
+<li><a href="agent-security.md">Security best practices for agents</a></li>
+<li><a href="https://martinfowler.com/articles/observability.html" target="_blank">Monitoring and observability</a></li>
+<li><a href="https://martinfowler.com/articles/microservice-testing/" target="_blank">Testing microservices</a></li>
+<li><a href="https://www.elastic.co/what-is/elk-stack" target="_blank">ELK Stack for logging</a></li>
+<li><a href="https://docs.python.org/3/library/unittest.html" target="_blank">Python unittest Documentation</a></li>
+<li><a href="https://docs.python.org/3/library/logging.html" target="_blank">Logging in Python</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="security-considerations-for-code-execution.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Security considerations for code execution">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Testing and logging strategies","level":"1.14.3","depth":2,"previous":{"title":"Security considerations for code execution","level":"1.14.2","depth":2,"path":"chapters/practical-pitfalls-and-best-practices/security-considerations-for-code-execution.md","ref":"chapters/practical-pitfalls-and-best-practices/security-considerations-for-code-execution.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AutoGen Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Agentic Documentation","language":"en","gitbook":"*"},"file":{"path":"chapters/practical-pitfalls-and-best-practices/testing-and-logging-strategies.md","mtime":"2025-05-24T01:52:24.919Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-05-24T01:52:41.608Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

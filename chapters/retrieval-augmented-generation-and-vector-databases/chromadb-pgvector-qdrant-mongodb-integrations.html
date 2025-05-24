@@ -1,0 +1,1321 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>ChromaDB PGVector Qdrant MongoDB integrations · Agentic Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="AutoGen Team">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="querying-and-chunking-strategies.html" />
+    
+    
+    <link rel="prev" href="vectordb-protocol.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../foundations-of-agents-and-messages/">
+            
+                <a href="../foundations-of-agents-and-messages/">
+            
+                    
+                    Foundations of Agents and Messages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../foundations-of-agents-and-messages/agent-protocol.html">
+            
+                <a href="../foundations-of-agents-and-messages/agent-protocol.html">
+            
+                    
+                    Agent protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../foundations-of-agents-and-messages/llmagent.html">
+            
+                <a href="../foundations-of-agents-and-messages/llmagent.html">
+            
+                    
+                    LLMAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../foundations-of-agents-and-messages/conversableagent.html">
+            
+                <a href="../foundations-of-agents-and-messages/conversableagent.html">
+            
+                    
+                    ConversableAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../foundations-of-agents-and-messages/basemessage-and-message-serialization.html">
+            
+                <a href="../foundations-of-agents-and-messages/basemessage-and-message-serialization.html">
+            
+                    
+                    BaseMessage and message serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../conversable-agent-workflow/">
+            
+                <a href="../conversable-agent-workflow/">
+            
+                    
+                    Conversable Agent Workflow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../conversable-agent-workflow/reply-function-registration.html">
+            
+                <a href="../conversable-agent-workflow/reply-function-registration.html">
+            
+                    
+                    Reply function registration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../conversable-agent-workflow/chat-message-flow.html">
+            
+                <a href="../conversable-agent-workflow/chat-message-flow.html">
+            
+                    
+                    Chat message flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../conversable-agent-workflow/human-input-modes.html">
+            
+                <a href="../conversable-agent-workflow/human-input-modes.html">
+            
+                    
+                    Human input modes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../tools-and-dependency-injection/">
+            
+                <a href="../tools-and-dependency-injection/">
+            
+                    
+                    Tools and Dependency Injection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../tools-and-dependency-injection/tool-abstraction.html">
+            
+                <a href="../tools-and-dependency-injection/tool-abstraction.html">
+            
+                    
+                    Tool abstraction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../tools-and-dependency-injection/toolkit.html">
+            
+                <a href="../tools-and-dependency-injection/toolkit.html">
+            
+                    
+                    Toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../tools-and-dependency-injection/dependency-injection-with-depends.html">
+            
+                <a href="../tools-and-dependency-injection/dependency-injection-with-depends.html">
+            
+                    
+                    Dependency injection with Depends
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../tools-and-dependency-injection/context-parameter-injection.html">
+            
+                <a href="../tools-and-dependency-injection/context-parameter-injection.html">
+            
+                    
+                    Context parameter injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../llm-configuration-and-model-clients/">
+            
+                <a href="../llm-configuration-and-model-clients/">
+            
+                    
+                    LLM Configuration and Model Clients
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html">
+            
+                <a href="../llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html">
+            
+                    
+                    LLMConfig and LLMConfigEntry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../llm-configuration-and-model-clients/modelclient-protocol.html">
+            
+                <a href="../llm-configuration-and-model-clients/modelclient-protocol.html">
+            
+                    
+                    ModelClient protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../llm-configuration-and-model-clients/config-list-and-filtering.html">
+            
+                <a href="../llm-configuration-and-model-clients/config-list-and-filtering.html">
+            
+                    
+                    Config list and filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../advanced-agent-orchestration/">
+            
+                <a href="../advanced-agent-orchestration/">
+            
+                    
+                    Advanced Agent Orchestration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../advanced-agent-orchestration/groupchat-and-groupchatmanager.html">
+            
+                <a href="../advanced-agent-orchestration/groupchat-and-groupchatmanager.html">
+            
+                    
+                    GroupChat and GroupChatManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../advanced-agent-orchestration/patterns-for-orchestration-(auto,-manual,-roundrobin,-random">
+            
+                <span>
+            
+                    
+                    Patterns for orchestration (Auto, Manual, RoundRobin, Random)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../advanced-agent-orchestration/speaker-selection-methods.html">
+            
+                <a href="../advanced-agent-orchestration/speaker-selection-methods.html">
+            
+                    
+                    Speaker selection methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../advanced-agent-orchestration/transitiontarget-and-handoff-conditions.html">
+            
+                <a href="../advanced-agent-orchestration/transitiontarget-and-handoff-conditions.html">
+            
+                    
+                    TransitionTarget and handoff conditions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../context-variables-and-conditional-logic/">
+            
+                <a href="../context-variables-and-conditional-logic/">
+            
+                    
+                    Context Variables and Conditional Logic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../context-variables-and-conditional-logic/contextvariables.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextvariables.html">
+            
+                    
+                    ContextVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../context-variables-and-conditional-logic/contextcondition-and-availablecondition.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextcondition-and-availablecondition.html">
+            
+                    
+                    ContextCondition and AvailableCondition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html">
+            
+                <a href="../context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html">
+            
+                    
+                    OnCondition and OnContextCondition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../context-variables-and-conditional-logic/contextexpression.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextexpression.html">
+            
+                    
+                    ContextExpression
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tool-and-function-interoperability/">
+            
+                <a href="../tool-and-function-interoperability/">
+            
+                    
+                    Tool and Function Interoperability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tool-and-function-interoperability/interoperable-protocol.html">
+            
+                <a href="../tool-and-function-interoperability/interoperable-protocol.html">
+            
+                    
+                    Interoperable protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../tool-and-function-interoperability/interoperability-registry.html">
+            
+                <a href="../tool-and-function-interoperability/interoperability-registry.html">
+            
+                    
+                    Interoperability registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../tool-and-function-interoperability/langchain-and-crewai-tool-conversion.html">
+            
+                <a href="../tool-and-function-interoperability/langchain-and-crewai-tool-conversion.html">
+            
+                    
+                    LangChain and CrewAI tool conversion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../tool-and-function-interoperability/pydantic-ai-tool-integration.html">
+            
+                <a href="../tool-and-function-interoperability/pydantic-ai-tool-integration.html">
+            
+                    
+                    Pydantic AI tool integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Retrieval Augmented Generation and Vector Databases
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="retrieveuserproxyagent.html">
+            
+                <a href="retrieveuserproxyagent.html">
+            
+                    
+                    RetrieveUserProxyAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="vectordb-protocol.html">
+            
+                <a href="vectordb-protocol.html">
+            
+                    
+                    VectorDB protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.3" data-path="chromadb-pgvector-qdrant-mongodb-integrations.html">
+            
+                <a href="chromadb-pgvector-qdrant-mongodb-integrations.html">
+            
+                    
+                    ChromaDB PGVector Qdrant MongoDB integrations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="querying-and-chunking-strategies.html">
+            
+                <a href="querying-and-chunking-strategies.html">
+            
+                    
+                    Querying and chunking strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../structured-outputs-and-tool-calling-with-llms/">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/">
+            
+                    
+                    Structured Outputs and Tool Calling with LLMs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html">
+            
+                    
+                    Function and Tool schemas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html">
+            
+                    
+                    Structured output formatting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html">
+            
+                    
+                    Tool call and function call message handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../multimodal-and-vision-capabilities/">
+            
+                <a href="../multimodal-and-vision-capabilities/">
+            
+                    
+                    Multimodal and Vision Capabilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../multimodal-and-vision-capabilities/multimodalconversableagent.html">
+            
+                <a href="../multimodal-and-vision-capabilities/multimodalconversableagent.html">
+            
+                    
+                    MultimodalConversableAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../multimodal-and-vision-capabilities/visioncapability.html">
+            
+                <a href="../multimodal-and-vision-capabilities/visioncapability.html">
+            
+                    
+                    VisionCapability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../multimodal-and-vision-capabilities/image-generation-and-captioning-tools.html">
+            
+                <a href="../multimodal-and-vision-capabilities/image-generation-and-captioning-tools.html">
+            
+                    
+                    Image generation and captioning tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../multimodal-and-vision-capabilities/content-formatting-for-images.html">
+            
+                <a href="../multimodal-and-vision-capabilities/content-formatting-for-images.html">
+            
+                    
+                    Content formatting for images
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../agent-capabilities-and-composability/">
+            
+                <a href="../agent-capabilities-and-composability/">
+            
+                    
+                    Agent Capabilities and Composability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../agent-capabilities-and-composability/agentcapability-base-class.html">
+            
+                <a href="../agent-capabilities-and-composability/agentcapability-base-class.html">
+            
+                    
+                    AgentCapability base class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../agent-capabilities-and-composability/teachability-and-memory.html">
+            
+                <a href="../agent-capabilities-and-composability/teachability-and-memory.html">
+            
+                    
+                    Teachability and memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../agent-capabilities-and-composability/toolscapability-composition.html">
+            
+                <a href="../agent-capabilities-and-composability/toolscapability-composition.html">
+            
+                    
+                    ToolsCapability composition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../agent-capabilities-and-composability/transformmessages-and-message-transforms.html">
+            
+                <a href="../agent-capabilities-and-composability/transformmessages-and-message-transforms.html">
+            
+                    
+                    TransformMessages and message transforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../group-and-swarm-agent-patterns/">
+            
+                <a href="../group-and-swarm-agent-patterns/">
+            
+                    
+                    Group and Swarm Agent Patterns
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../group-and-swarm-agent-patterns/swarmagent-and-afterwork.html">
+            
+                <a href="../group-and-swarm-agent-patterns/swarmagent-and-afterwork.html">
+            
+                    
+                    SwarmAgent and AfterWork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../group-and-swarm-agent-patterns/oncondition-and-nested-chat-transitions.html">
+            
+                <a href="../group-and-swarm-agent-patterns/oncondition-and-nested-chat-transitions.html">
+            
+                    
+                    OnCondition and nested chat transitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../group-and-swarm-agent-patterns/pattern-classes-for-orchestration.html">
+            
+                <a href="../group-and-swarm-agent-patterns/pattern-classes-for-orchestration.html">
+            
+                    
+                    Pattern classes for orchestration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../practical-pitfalls-and-best-practices/">
+            
+                <a href="../practical-pitfalls-and-best-practices/">
+            
+                    
+                    Practical Pitfalls and Best Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.html">
+            
+                <a href="../practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.html">
+            
+                    
+                    Error handling in agent orchestration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../practical-pitfalls-and-best-practices/security-considerations-for-code-execution.html">
+            
+                <a href="../practical-pitfalls-and-best-practices/security-considerations-for-code-execution.html">
+            
+                    
+                    Security considerations for code execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../practical-pitfalls-and-best-practices/testing-and-logging-strategies.html">
+            
+                <a href="../practical-pitfalls-and-best-practices/testing-and-logging-strategies.html">
+            
+                    
+                    Testing and logging strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ChromaDB PGVector Qdrant MongoDB integrations</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chromadb-pgvector-qdrant-mongodb-integrations">ChromaDB PGVector Qdrant MongoDB integrations</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Retrieval Augmented Generation (RAG)</strong> combines large language models (LLMs) with external knowledge sources to create agents capable of dynamic, context-aware answers. Central to RAG is the use of <strong>vector databases</strong> for semantic search—storing document embeddings and enabling similarity-based retrieval.</p>
+<p>Four prominent vector database solutions are:</p>
+<ul>
+<li><strong>ChromaDB</strong>: An open-source embedding database optimized for LLM applications.</li>
+<li><strong>PGVector</strong>: A PostgreSQL extension bringing vector search into the relational database world.</li>
+<li><strong>Qdrant</strong>: A high-performance, production-ready vector search engine.</li>
+<li><strong>MongoDB</strong>: A NoSQL document database with vector search capabilities (Atlas Search).</li>
+</ul>
+<p>This chapter explores how to integrate, query, and manage these vector databases, focusing on RAG workflows, chunking/tokenization, and interoperability.</p>
+<hr></hr>
+<h2 id="explanation">Explanation</h2>
+<h3 id="1-retrieval-augmented-generation-rag-with-vector-stores">1. Retrieval Augmented Generation (RAG) with Vector Stores</h3>
+<p>RAG agents enhance LLM responses by retrieving relevant document chunks from a vector database, using context variables to tailor queries and conditional logic to orchestrate retrieval and generation steps.</p>
+<h4 id="workflow">Workflow</h4>
+<ol>
+<li><strong>Ingestion</strong>: Documents are split into smaller chunks, embedded (vectorized) using a model (e.g., OpenAI, Sentence Transformers), and stored in a vector database.</li>
+<li><strong>Querying</strong>: A user query is embedded, then a similarity search retrieves the most relevant chunks.</li>
+<li><strong>Augmentation</strong>: Retrieved chunks are fed to the LLM as context for answer generation.</li>
+</ol>
+<h3 id="2-integration-patterns">2. Integration Patterns</h3>
+<ul>
+<li><strong>ChromaDB</strong>: Pure Python, simple to set up, ideal for prototyping and small-scale deployments.</li>
+<li><strong>PGVector</strong>: Integrates into existing PostgreSQL infrastructure, supports SQL queries and ACID transactions.</li>
+<li><strong>Qdrant</strong>: Offers REST/gRPC APIs, high performance for large datasets, supports filtering and metadata.</li>
+<li><strong>MongoDB</strong>: Leverages Atlas Search for vector similarity, integrates with document-based data models.</li>
+</ul>
+<h3 id="3-chunking-and-tokenization">3. Chunking and Tokenization</h3>
+<ul>
+<li><strong>Chunking</strong>: Splitting documents into manageable pieces (by sentences, paragraphs, or token count).</li>
+<li><strong>Tokenization</strong>: Ensuring chunks fit within model/token limits to optimize retrieval and context window usage.</li>
+</ul>
+<hr></hr>
+<h2 id="examples">Examples</h2>
+<h3 id="1-chromadb-integration">1. ChromaDB Integration</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> chromadb
+<span class="hljs-keyword">from</span> chromadb.config <span class="hljs-keyword">import</span> Settings
+<span class="hljs-keyword">from</span> sentence_transformers <span class="hljs-keyword">import</span> SentenceTransformer
+
+<span class="hljs-comment"># Initialize ChromaDB</span>
+client = chromadb.Client(Settings(persist_directory=<span class="hljs-string">"./chroma_db"</span>))
+collection = client.get_or_create_collection(<span class="hljs-string">"documents"</span>)
+
+<span class="hljs-comment"># Embed and add documents</span>
+embedder = SentenceTransformer(<span class="hljs-string">'all-MiniLM-L6-v2'</span>)
+texts = [<span class="hljs-string">"LLMs are powerful."</span>, <span class="hljs-string">"Vector databases enable semantic search."</span>]
+embeddings = embedder.encode(texts)
+
+<span class="hljs-keyword">for</span> text, embedding <span class="hljs-keyword">in</span> <span class="hljs-built_in">zip</span>(texts, embeddings):
+    collection.add(
+        documents=[text],
+        embeddings=[embedding.tolist()],
+        ids=[<span class="hljs-built_in">str</span>(<span class="hljs-built_in">hash</span>(text))]
+    )
+
+<span class="hljs-comment"># Query</span>
+query = <span class="hljs-string">"How do vector databases work?"</span>
+query_embedding = embedder.encode([query])[<span class="hljs-number">0</span>]
+results = collection.query(query_embeddings=[query_embedding.tolist()], n_results=<span class="hljs-number">2</span>)
+<span class="hljs-built_in">print</span>(results)
+</code></pre>
+<h3 id="2-pgvector-integration">2. PGVector Integration</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> psycopg2
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+<span class="hljs-comment"># Connect to PostgreSQL with PGVector installed</span>
+conn = psycopg2.connect(<span class="hljs-string">"dbname=vector_db user=postgres password=secret"</span>)
+cur = conn.cursor()
+
+<span class="hljs-comment"># Create table</span>
+cur.execute(<span class="hljs-string">"""
+CREATE TABLE IF NOT EXISTS documents (
+    id SERIAL PRIMARY KEY,
+    content TEXT,
+    embedding VECTOR(384)
+);
+"""</span>)
+conn.commit()
+
+<span class="hljs-comment"># Insert document</span>
+embedding = np.random.rand(<span class="hljs-number">384</span>).tolist()
+cur.execute(<span class="hljs-string">"INSERT INTO documents (content, embedding) VALUES (%s, %s)"</span>, (<span class="hljs-string">"My doc text"</span>, embedding))
+conn.commit()
+
+<span class="hljs-comment"># Similarity search</span>
+query_embedding = np.random.rand(<span class="hljs-number">384</span>).tolist()
+cur.execute(<span class="hljs-string">"""
+SELECT content FROM documents
+ORDER BY embedding &lt;-&gt; %s LIMIT 5
+"""</span>, (query_embedding,))
+<span class="hljs-built_in">print</span>(cur.fetchall())
+</code></pre>
+<h3 id="3-qdrant-integration">3. Qdrant Integration</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> qdrant_client
+<span class="hljs-keyword">from</span> sentence_transformers <span class="hljs-keyword">import</span> SentenceTransformer
+
+client = qdrant_client.QdrantClient(<span class="hljs-string">"localhost"</span>, port=<span class="hljs-number">6333</span>)
+embedder = SentenceTransformer(<span class="hljs-string">'all-MiniLM-L6-v2'</span>)
+
+<span class="hljs-comment"># Create collection</span>
+client.recreate_collection(
+    collection_name=<span class="hljs-string">"docs"</span>,
+    vector_size=<span class="hljs-number">384</span>,
+    distance=<span class="hljs-string">"Cosine"</span>
+)
+
+<span class="hljs-comment"># Add vectors</span>
+texts = [<span class="hljs-string">"Qdrant is fast."</span>, <span class="hljs-string">"Supports filtering."</span>]
+embeddings = embedder.encode(texts)
+points = [
+    qdrant_client.models.PointStruct(
+        <span class="hljs-built_in">id</span>=i, vector=embedding.tolist(), payload={<span class="hljs-string">"text"</span>: text}
+    ) <span class="hljs-keyword">for</span> i, (text, embedding) <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(<span class="hljs-built_in">zip</span>(texts, embeddings))
+]
+client.upsert(collection_name=<span class="hljs-string">"docs"</span>, points=points)
+
+<span class="hljs-comment"># Search</span>
+query = <span class="hljs-string">"Does Qdrant support filtering?"</span>
+query_vec = embedder.encode([query])[<span class="hljs-number">0</span>]
+results = client.search(collection_name=<span class="hljs-string">"docs"</span>,
+                        query_vector=query_vec.tolist(),
+                        limit=<span class="hljs-number">2</span>)
+<span class="hljs-built_in">print</span>([hit.payload[<span class="hljs-string">'text'</span>] <span class="hljs-keyword">for</span> hit <span class="hljs-keyword">in</span> results])
+</code></pre>
+<h3 id="4-mongodb-atlas-vector-search-python-pymongo">4. MongoDB Atlas Vector Search (Python, PyMongo)</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> pymongo <span class="hljs-keyword">import</span> MongoClient
+<span class="hljs-keyword">from</span> sentence_transformers <span class="hljs-keyword">import</span> SentenceTransformer
+
+client = MongoClient(<span class="hljs-string">"mongodb+srv://user:pass@cluster0.mongodb.net"</span>)
+db = client[<span class="hljs-string">'vector_db'</span>]
+collection = db[<span class="hljs-string">'documents'</span>]
+
+embedder = SentenceTransformer(<span class="hljs-string">'all-MiniLM-L6-v2'</span>)
+text = <span class="hljs-string">"MongoDB supports vector search."</span>
+embedding = embedder.encode([text])[<span class="hljs-number">0</span>].tolist()
+
+<span class="hljs-comment"># Insert document with embedding</span>
+collection.insert_one({<span class="hljs-string">"text"</span>: text, <span class="hljs-string">"embedding"</span>: embedding})
+
+<span class="hljs-comment"># Vector search (Atlas Search via $search)</span>
+query = <span class="hljs-string">"How does vector search work in MongoDB?"</span>
+query_embedding = embedder.encode([query])[<span class="hljs-number">0</span>].tolist()
+
+pipeline = [
+    {
+        <span class="hljs-string">"$search"</span>: {
+            <span class="hljs-string">"index"</span>: <span class="hljs-string">"vector_index"</span>,
+            <span class="hljs-string">"knnBeta"</span>: {
+                <span class="hljs-string">"vector"</span>: query_embedding,
+                <span class="hljs-string">"path"</span>: <span class="hljs-string">"embedding"</span>,
+                <span class="hljs-string">"k"</span>: <span class="hljs-number">3</span>
+            }
+        }
+    }
+]
+results = <span class="hljs-built_in">list</span>(collection.aggregate(pipeline))
+<span class="hljs-built_in">print</span>([doc[<span class="hljs-string">'text'</span>] <span class="hljs-keyword">for</span> doc <span class="hljs-keyword">in</span> results])
+</code></pre>
+<hr></hr>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li><strong>Consistent Embedding Model</strong>: Use the same embedding model for both storage and query to ensure semantic alignment.</li>
+<li><strong>Chunking Strategy</strong>: Balance chunk size—too large reduces retrieval granularity; too small may split context.</li>
+<li><strong>Metadata Indexing</strong>: Store metadata (e.g., source, tags) alongside vectors for filtered and conditional retrieval.</li>
+<li><strong>Batch Operations</strong>: Batch inserts and queries for efficiency, especially with large datasets.</li>
+<li><strong>Token Limits Awareness</strong>: Ensure retrieved chunks fit within the LLM's context window.</li>
+<li><strong>Security and Access Control</strong>: Secure database endpoints; handle sensitive data appropriately.</li>
+<li><strong>Monitoring &amp; Logging</strong>: Track retrieval performance and query patterns for optimization.</li>
+</ul>
+<p><strong>Pitfalls to avoid:</strong></p>
+<ul>
+<li>Mismatched embedding dimensions or models between ingestion and query.</li>
+<li>Ignoring text preprocessing (tokenization, normalization).</li>
+<li>Overloading context window in LLMs, leading to truncation.</li>
+<li>Neglecting database scaling and backup strategies.</li>
+</ul>
+<hr></hr>
+<h2 id="related-concepts">Related Concepts</h2>
+<ul>
+<li><a href="https://huggingface.co/docs/transformers/main/en/main_classes/retrieval" target="_blank">Retrieval Augmented Generation (RAG)</a></li>
+<li><a href="https://platform.openai.com/docs/guides/embeddings" target="_blank">Embeddings and Semantic Search</a></li>
+<li><a href="https://www.sbert.net/examples/applications/semantic-search/README.html" target="_blank">Chunking and Tokenization Strategies</a></li>
+<li><a href="https://python.langchain.com/docs/modules/data_connection/vectorstores/" target="_blank">LangChain Vector Store Integrations</a></li>
+<li><a href="https://docs.trychroma.com/" target="_blank">ChromaDB Documentation</a></li>
+<li><a href="https://github.com/pgvector/pgvector" target="_blank">PGVector Documentation</a></li>
+<li><a href="https://qdrant.tech/documentation/" target="_blank">Qdrant Documentation</a></li>
+<li><a href="https://www.mongodb.com/docs/atlas/atlas-search/vector-search/" target="_blank">MongoDB Atlas Vector Search</a></li>
+<li><a href="https://python.langchain.com/docs/modules/agents/tools/" target="_blank">Tool and Function Interoperability in RAG</a></li>
+<li><a href="https://python.langchain.com/docs/expression_language/how_to/context_variables/" target="_blank">Context Variables and Conditional Logic</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vectordb-protocol.html" class="navigation navigation-prev " aria-label="Previous page: VectorDB protocol">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="querying-and-chunking-strategies.html" class="navigation navigation-next " aria-label="Next page: Querying and chunking strategies">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ChromaDB PGVector Qdrant MongoDB integrations","level":"1.9.3","depth":2,"next":{"title":"Querying and chunking strategies","level":"1.9.4","depth":2,"path":"chapters/retrieval-augmented-generation-and-vector-databases/querying-and-chunking-strategies.md","ref":"chapters/retrieval-augmented-generation-and-vector-databases/querying-and-chunking-strategies.md","articles":[]},"previous":{"title":"VectorDB protocol","level":"1.9.2","depth":2,"path":"chapters/retrieval-augmented-generation-and-vector-databases/vectordb-protocol.md","ref":"chapters/retrieval-augmented-generation-and-vector-databases/vectordb-protocol.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AutoGen Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Agentic Documentation","language":"en","gitbook":"*"},"file":{"path":"chapters/retrieval-augmented-generation-and-vector-databases/chromadb-pgvector-qdrant-mongodb-integrations.md","mtime":"2025-05-24T01:52:24.919Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-05-24T01:52:41.608Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1243 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>GroupChat and GroupChatManager · Agentic Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="AutoGen Team">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="patterns-for-orchestration-(auto,-manual,-roundrobin,-random" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../foundations-of-agents-and-messages/">
+            
+                <a href="../foundations-of-agents-and-messages/">
+            
+                    
+                    Foundations of Agents and Messages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../foundations-of-agents-and-messages/agent-protocol.html">
+            
+                <a href="../foundations-of-agents-and-messages/agent-protocol.html">
+            
+                    
+                    Agent protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../foundations-of-agents-and-messages/llmagent.html">
+            
+                <a href="../foundations-of-agents-and-messages/llmagent.html">
+            
+                    
+                    LLMAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../foundations-of-agents-and-messages/conversableagent.html">
+            
+                <a href="../foundations-of-agents-and-messages/conversableagent.html">
+            
+                    
+                    ConversableAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../foundations-of-agents-and-messages/basemessage-and-message-serialization.html">
+            
+                <a href="../foundations-of-agents-and-messages/basemessage-and-message-serialization.html">
+            
+                    
+                    BaseMessage and message serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../conversable-agent-workflow/">
+            
+                <a href="../conversable-agent-workflow/">
+            
+                    
+                    Conversable Agent Workflow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../conversable-agent-workflow/reply-function-registration.html">
+            
+                <a href="../conversable-agent-workflow/reply-function-registration.html">
+            
+                    
+                    Reply function registration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../conversable-agent-workflow/chat-message-flow.html">
+            
+                <a href="../conversable-agent-workflow/chat-message-flow.html">
+            
+                    
+                    Chat message flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../conversable-agent-workflow/human-input-modes.html">
+            
+                <a href="../conversable-agent-workflow/human-input-modes.html">
+            
+                    
+                    Human input modes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../tools-and-dependency-injection/">
+            
+                <a href="../tools-and-dependency-injection/">
+            
+                    
+                    Tools and Dependency Injection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../tools-and-dependency-injection/tool-abstraction.html">
+            
+                <a href="../tools-and-dependency-injection/tool-abstraction.html">
+            
+                    
+                    Tool abstraction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../tools-and-dependency-injection/toolkit.html">
+            
+                <a href="../tools-and-dependency-injection/toolkit.html">
+            
+                    
+                    Toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../tools-and-dependency-injection/dependency-injection-with-depends.html">
+            
+                <a href="../tools-and-dependency-injection/dependency-injection-with-depends.html">
+            
+                    
+                    Dependency injection with Depends
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../tools-and-dependency-injection/context-parameter-injection.html">
+            
+                <a href="../tools-and-dependency-injection/context-parameter-injection.html">
+            
+                    
+                    Context parameter injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../llm-configuration-and-model-clients/">
+            
+                <a href="../llm-configuration-and-model-clients/">
+            
+                    
+                    LLM Configuration and Model Clients
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html">
+            
+                <a href="../llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html">
+            
+                    
+                    LLMConfig and LLMConfigEntry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../llm-configuration-and-model-clients/modelclient-protocol.html">
+            
+                <a href="../llm-configuration-and-model-clients/modelclient-protocol.html">
+            
+                    
+                    ModelClient protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../llm-configuration-and-model-clients/config-list-and-filtering.html">
+            
+                <a href="../llm-configuration-and-model-clients/config-list-and-filtering.html">
+            
+                    
+                    Config list and filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Advanced Agent Orchestration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="groupchat-and-groupchatmanager.html">
+            
+                <a href="groupchat-and-groupchatmanager.html">
+            
+                    
+                    GroupChat and GroupChatManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="patterns-for-orchestration-(auto,-manual,-roundrobin,-random">
+            
+                <span>
+            
+                    
+                    Patterns for orchestration (Auto, Manual, RoundRobin, Random)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="speaker-selection-methods.html">
+            
+                <a href="speaker-selection-methods.html">
+            
+                    
+                    Speaker selection methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="transitiontarget-and-handoff-conditions.html">
+            
+                <a href="transitiontarget-and-handoff-conditions.html">
+            
+                    
+                    TransitionTarget and handoff conditions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../context-variables-and-conditional-logic/">
+            
+                <a href="../context-variables-and-conditional-logic/">
+            
+                    
+                    Context Variables and Conditional Logic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../context-variables-and-conditional-logic/contextvariables.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextvariables.html">
+            
+                    
+                    ContextVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../context-variables-and-conditional-logic/contextcondition-and-availablecondition.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextcondition-and-availablecondition.html">
+            
+                    
+                    ContextCondition and AvailableCondition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html">
+            
+                <a href="../context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html">
+            
+                    
+                    OnCondition and OnContextCondition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../context-variables-and-conditional-logic/contextexpression.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextexpression.html">
+            
+                    
+                    ContextExpression
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tool-and-function-interoperability/">
+            
+                <a href="../tool-and-function-interoperability/">
+            
+                    
+                    Tool and Function Interoperability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tool-and-function-interoperability/interoperable-protocol.html">
+            
+                <a href="../tool-and-function-interoperability/interoperable-protocol.html">
+            
+                    
+                    Interoperable protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../tool-and-function-interoperability/interoperability-registry.html">
+            
+                <a href="../tool-and-function-interoperability/interoperability-registry.html">
+            
+                    
+                    Interoperability registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../tool-and-function-interoperability/langchain-and-crewai-tool-conversion.html">
+            
+                <a href="../tool-and-function-interoperability/langchain-and-crewai-tool-conversion.html">
+            
+                    
+                    LangChain and CrewAI tool conversion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../tool-and-function-interoperability/pydantic-ai-tool-integration.html">
+            
+                <a href="../tool-and-function-interoperability/pydantic-ai-tool-integration.html">
+            
+                    
+                    Pydantic AI tool integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../retrieval-augmented-generation-and-vector-databases/">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/">
+            
+                    
+                    Retrieval Augmented Generation and Vector Databases
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../retrieval-augmented-generation-and-vector-databases/retrieveuserproxyagent.html">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/retrieveuserproxyagent.html">
+            
+                    
+                    RetrieveUserProxyAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../retrieval-augmented-generation-and-vector-databases/vectordb-protocol.html">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/vectordb-protocol.html">
+            
+                    
+                    VectorDB protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../retrieval-augmented-generation-and-vector-databases/chromadb-pgvector-qdrant-mongodb-integrations.html">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/chromadb-pgvector-qdrant-mongodb-integrations.html">
+            
+                    
+                    ChromaDB PGVector Qdrant MongoDB integrations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../retrieval-augmented-generation-and-vector-databases/querying-and-chunking-strategies.html">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/querying-and-chunking-strategies.html">
+            
+                    
+                    Querying and chunking strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../structured-outputs-and-tool-calling-with-llms/">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/">
+            
+                    
+                    Structured Outputs and Tool Calling with LLMs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html">
+            
+                    
+                    Function and Tool schemas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html">
+            
+                    
+                    Structured output formatting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html">
+            
+                    
+                    Tool call and function call message handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../multimodal-and-vision-capabilities/">
+            
+                <a href="../multimodal-and-vision-capabilities/">
+            
+                    
+                    Multimodal and Vision Capabilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../multimodal-and-vision-capabilities/multimodalconversableagent.html">
+            
+                <a href="../multimodal-and-vision-capabilities/multimodalconversableagent.html">
+            
+                    
+                    MultimodalConversableAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../multimodal-and-vision-capabilities/visioncapability.html">
+            
+                <a href="../multimodal-and-vision-capabilities/visioncapability.html">
+            
+                    
+                    VisionCapability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../multimodal-and-vision-capabilities/image-generation-and-captioning-tools.html">
+            
+                <a href="../multimodal-and-vision-capabilities/image-generation-and-captioning-tools.html">
+            
+                    
+                    Image generation and captioning tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../multimodal-and-vision-capabilities/content-formatting-for-images.html">
+            
+                <a href="../multimodal-and-vision-capabilities/content-formatting-for-images.html">
+            
+                    
+                    Content formatting for images
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../agent-capabilities-and-composability/">
+            
+                <a href="../agent-capabilities-and-composability/">
+            
+                    
+                    Agent Capabilities and Composability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../agent-capabilities-and-composability/agentcapability-base-class.html">
+            
+                <a href="../agent-capabilities-and-composability/agentcapability-base-class.html">
+            
+                    
+                    AgentCapability base class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../agent-capabilities-and-composability/teachability-and-memory.html">
+            
+                <a href="../agent-capabilities-and-composability/teachability-and-memory.html">
+            
+                    
+                    Teachability and memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../agent-capabilities-and-composability/toolscapability-composition.html">
+            
+                <a href="../agent-capabilities-and-composability/toolscapability-composition.html">
+            
+                    
+                    ToolsCapability composition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../agent-capabilities-and-composability/transformmessages-and-message-transforms.html">
+            
+                <a href="../agent-capabilities-and-composability/transformmessages-and-message-transforms.html">
+            
+                    
+                    TransformMessages and message transforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../group-and-swarm-agent-patterns/">
+            
+                <a href="../group-and-swarm-agent-patterns/">
+            
+                    
+                    Group and Swarm Agent Patterns
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../group-and-swarm-agent-patterns/swarmagent-and-afterwork.html">
+            
+                <a href="../group-and-swarm-agent-patterns/swarmagent-and-afterwork.html">
+            
+                    
+                    SwarmAgent and AfterWork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../group-and-swarm-agent-patterns/oncondition-and-nested-chat-transitions.html">
+            
+                <a href="../group-and-swarm-agent-patterns/oncondition-and-nested-chat-transitions.html">
+            
+                    
+                    OnCondition and nested chat transitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../group-and-swarm-agent-patterns/pattern-classes-for-orchestration.html">
+            
+                <a href="../group-and-swarm-agent-patterns/pattern-classes-for-orchestration.html">
+            
+                    
+                    Pattern classes for orchestration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../practical-pitfalls-and-best-practices/">
+            
+                <a href="../practical-pitfalls-and-best-practices/">
+            
+                    
+                    Practical Pitfalls and Best Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.html">
+            
+                <a href="../practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.html">
+            
+                    
+                    Error handling in agent orchestration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../practical-pitfalls-and-best-practices/security-considerations-for-code-execution.html">
+            
+                <a href="../practical-pitfalls-and-best-practices/security-considerations-for-code-execution.html">
+            
+                    
+                    Security considerations for code execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../practical-pitfalls-and-best-practices/testing-and-logging-strategies.html">
+            
+                <a href="../practical-pitfalls-and-best-practices/testing-and-logging-strategies.html">
+            
+                    
+                    Testing and logging strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >GroupChat and GroupChatManager</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="groupchat-and-groupchatmanager">GroupChat and GroupChatManager</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>GroupChat</strong> and <strong>GroupChatManager</strong> are advanced abstractions for orchestrating multiple agents in collaborative conversational workflows. They enable you to coordinate interactions among multiple language model agents within a single conversation, supporting complex patterns such as multi-agent discussions, dynamic speaker selection, and intelligent handoffs. These constructs are essential for building robust, multi-faceted AI systems where agents with different roles and expertise work together toward a shared goal.</p>
+<hr></hr>
+<h2 id="explanation">Explanation</h2>
+<h3 id="what-is-groupchat">What is GroupChat?</h3>
+<p>A <strong>GroupChat</strong> is a structured conversation involving multiple agents (LLMs or tool-augmented agents). Unlike a single-agent chat, GroupChat manages the flow of messages, tracks speaker turns, and maintains conversation state across agents. It enables orchestration patterns such as round-robin discussion, expert handoff, and consensus building.</p>
+<h3 id="what-is-groupchatmanager">What is GroupChatManager?</h3>
+<p>The <strong>GroupChatManager</strong> acts as the conductor of the GroupChat. It controls which agent should speak next, manages transitions (including handoffs and after-work transitions), and enforces orchestration policies. The manager can be customized to implement various decision logic for speaker selection and agent transitions based on context, agent capabilities, or conversation history.</p>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>Speaker Selection:</strong> Dynamically choose which agent responds at each turn based on context or predefined rules.</li>
+<li><strong>Agent Transitions:</strong> Seamlessly transition between agents, allowing for task-specific handoff or multi-step collaboration.</li>
+<li><strong>Orchestration Patterns:</strong> Implement patterns such as round-robin, expert-in-the-loop, or conditional delegation.</li>
+<li><strong>State Management:</strong> Maintain shared context and message history across all agents in the group.</li>
+</ul>
+<hr></hr>
+<h2 id="examples">Examples</h2>
+<h3 id="1-basic-groupchat-setup">1. Basic GroupChat Setup</h3>
+<p>Let's set up a basic GroupChat where two agents collaborate to answer user questions.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain.agents <span class="hljs-keyword">import</span> AgentExecutor, create_openai_functions_agent
+<span class="hljs-keyword">from</span> langchain.prompts <span class="hljs-keyword">import</span> ChatPromptTemplate
+<span class="hljs-keyword">from</span> langchain_experimental.agents <span class="hljs-keyword">import</span> GroupChat, GroupChatManager
+<span class="hljs-keyword">from</span> langchain_openai <span class="hljs-keyword">import</span> ChatOpenAI
+
+<span class="hljs-comment"># Define two agents with different expertise</span>
+support_agent = create_openai_functions_agent(
+    llm=ChatOpenAI(model=<span class="hljs-string">"gpt-3.5-turbo"</span>),
+    tools=[],  <span class="hljs-comment"># Add support tools here</span>
+    prompt=ChatPromptTemplate.from_template(<span class="hljs-string">"You are a customer support agent."</span>)
+)
+
+expert_agent = create_openai_functions_agent(
+    llm=ChatOpenAI(model=<span class="hljs-string">"gpt-4"</span>),
+    tools=[],  <span class="hljs-comment"># Add expert tools here</span>
+    prompt=ChatPromptTemplate.from_template(<span class="hljs-string">"You are a technical expert."</span>)
+)
+
+<span class="hljs-comment"># Wrap agents as executors</span>
+support_executor = AgentExecutor(agent=support_agent, tools=[])
+expert_executor = AgentExecutor(agent=expert_agent, tools=[])
+
+<span class="hljs-comment"># Create the GroupChat</span>
+group_chat = GroupChat(
+    agents=[support_executor, expert_executor],
+    messages=[],
+    max_rounds=<span class="hljs-number">5</span>
+)
+
+<span class="hljs-comment"># Create a GroupChatManager</span>
+manager = GroupChatManager(groupchat=group_chat)
+
+<span class="hljs-comment"># Run the group chat</span>
+result = manager.run(<span class="hljs-built_in">input</span>=<span class="hljs-string">"How can I reset my device password?"</span>)
+<span class="hljs-built_in">print</span>(result)
+</code></pre>
+<h3 id="2-custom-speaker-selection">2. Custom Speaker Selection</h3>
+<p>Customize which agent should respond based on message content.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CustomGroupChatManager</span>(<span class="hljs-title class_ inherited__">GroupChatManager</span>):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">select_speaker</span>(<span class="hljs-params">self, message</span>):
+        <span class="hljs-keyword">if</span> <span class="hljs-string">"technical"</span> <span class="hljs-keyword">in</span> message.content.lower():
+            <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.groupchat.agents[<span class="hljs-number">1</span>]  <span class="hljs-comment"># expert_agent</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.groupchat.agents[<span class="hljs-number">0</span>]  <span class="hljs-comment"># support_agent</span>
+
+manager = CustomGroupChatManager(groupchat=group_chat)
+</code></pre>
+<h3 id="3-agent-handoff-example">3. Agent Handoff Example</h3>
+<p>Implement a handoff: after the support agent gathers details, the expert agent takes over.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HandoffGroupChatManager</span>(<span class="hljs-title class_ inherited__">GroupChatManager</span>):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">select_speaker</span>(<span class="hljs-params">self, message</span>):
+        <span class="hljs-keyword">if</span> <span class="hljs-string">"need technical assistance"</span> <span class="hljs-keyword">in</span> message.content.lower():
+            <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.groupchat.agents[<span class="hljs-number">1</span>]  <span class="hljs-comment"># expert_agent</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.groupchat.agents[<span class="hljs-number">0</span>]  <span class="hljs-comment"># support_agent</span>
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">after_work</span>(<span class="hljs-params">self, last_speaker, message</span>):
+        <span class="hljs-comment"># Optionally notify agents or log handoffs</span>
+        <span class="hljs-keyword">pass</span>
+
+manager = HandoffGroupChatManager(groupchat=group_chat)
+</code></pre>
+<hr></hr>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li><strong>Define Clear Agent Roles:</strong> Clearly specify each agent’s expertise and responsibilities to avoid redundant or conflicting responses.</li>
+<li><strong>Customize Speaker Logic:</strong> Tailor the <code>select_speaker</code> logic to match your application's needs, such as keyword triggers, user roles, or agent confidence.</li>
+<li><strong>Limit Rounds:</strong> Set a sensible <code>max_rounds</code> to prevent infinite loops and improve efficiency.</li>
+<li><strong>Handle Handoffs Gracefully:</strong> Ensure context is passed cleanly between agents during transitions for seamless user experience.</li>
+<li><strong>Monitor and Log Transitions:</strong> Track which agent handles each turn for transparency and debugging.</li>
+<li><strong>Manage Shared State:</strong> Use a consistent state or memory object to maintain context across agents.</li>
+<li><strong>Test with Realistic Scenarios:</strong> Simulate group chat flows to identify edge cases or breakdowns in orchestration.</li>
+</ul>
+<h3 id="common-pitfalls">Common Pitfalls</h3>
+<ul>
+<li><strong>Uncontrolled Loops:</strong> Failing to limit conversation rounds can lead to runaway discussions.</li>
+<li><strong>Ambiguous Agent Roles:</strong> Overlapping agent responsibilities can confuse both agents and users.</li>
+<li><strong>Loss of Context:</strong> Not synchronizing shared memory/context may cause agents to miss important details.</li>
+<li><strong>Hardcoded Transitions:</strong> Rigid <code>select_speaker</code> logic can make the system inflexible; consider data-driven approaches when possible.</li>
+</ul>
+<hr></hr>
+<h2 id="related-concepts">Related Concepts</h2>
+<ul>
+<li><a href="llm-configuration.md">LLM Configuration and Model Clients</a></li>
+<li><a href="tool-augmented-agents.md">Tool-augmented Agents</a></li>
+<li><a href="agent-executor.md">AgentExecutor</a></li>
+<li><a href="prompt-engineering.md">Prompt Engineering</a></li>
+<li><a href="https://python.langchain.com/docs/agents/multi_agent" target="_blank">Multi-Agent Collaboration Patterns</a></li>
+<li><a href="state-management.md">State Management and Memory</a></li>
+<li><a href="https://python.langchain.com/docs/experimental/groupchat/" target="_blank">LangChain Experimental Agents Documentation</a></li>
+</ul>
+<hr></hr>
+<p>By leveraging <strong>GroupChat</strong> and <strong>GroupChatManager</strong>, you can orchestrate complex, multi-agent conversations, enabling collaborative intelligence and richer user experiences in your AI applications.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Advanced Agent Orchestration">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="patterns-for-orchestration-(auto,-manual,-roundrobin,-random" class="navigation navigation-next " aria-label="Next page: Patterns for orchestration (Auto, Manual, RoundRobin, Random)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GroupChat and GroupChatManager","level":"1.6.1","depth":2,"next":{"title":"Patterns for orchestration (Auto, Manual, RoundRobin, Random)","level":"1.6.2","depth":2,"path":"chapters/advanced-agent-orchestration/patterns-for-orchestration-(auto,-manual,-roundrobin,-random","ref":"chapters/advanced-agent-orchestration/patterns-for-orchestration-(auto,-manual,-roundrobin,-random","articles":[]},"previous":{"title":"Advanced Agent Orchestration","level":"1.6","depth":1,"path":"chapters/advanced-agent-orchestration/README.md","ref":"chapters/advanced-agent-orchestration/README.md","articles":[{"title":"GroupChat and GroupChatManager","level":"1.6.1","depth":2,"path":"chapters/advanced-agent-orchestration/groupchat-and-groupchatmanager.md","ref":"chapters/advanced-agent-orchestration/groupchat-and-groupchatmanager.md","articles":[]},{"title":"Patterns for orchestration (Auto, Manual, RoundRobin, Random)","level":"1.6.2","depth":2,"path":"chapters/advanced-agent-orchestration/patterns-for-orchestration-(auto,-manual,-roundrobin,-random","ref":"chapters/advanced-agent-orchestration/patterns-for-orchestration-(auto,-manual,-roundrobin,-random","articles":[]},{"title":"Speaker selection methods","level":"1.6.3","depth":2,"path":"chapters/advanced-agent-orchestration/speaker-selection-methods.md","ref":"chapters/advanced-agent-orchestration/speaker-selection-methods.md","articles":[]},{"title":"TransitionTarget and handoff conditions","level":"1.6.4","depth":2,"path":"chapters/advanced-agent-orchestration/transitiontarget-and-handoff-conditions.md","ref":"chapters/advanced-agent-orchestration/transitiontarget-and-handoff-conditions.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-default","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AutoGen Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Agentic Documentation","language":"en","gitbook":"*"},"file":{"path":"chapters/advanced-agent-orchestration/groupchat-and-groupchatmanager.md","mtime":"2025-05-24T01:52:24.915Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-05-24T01:52:41.608Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
