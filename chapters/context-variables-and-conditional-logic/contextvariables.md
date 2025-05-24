@@ -1,4 +1,4 @@
-# Context Variables
+# ContextVariables
 
 ## Overview
 
@@ -84,11 +84,11 @@ else:
 
 ## Related Concepts
 
-- [Conditional Logic](./ConditionalLogic.html)
-- [Agent Transitions](./AgentTransitions.html)
-- [Context Expressions](./ContextExpressions.html)
-- [State Management in Multi-Agent Systems](./StateManagement.html)
-- [Advanced Agent Orchestration](./AdvancedAgentOrchestration.html)
+- [Conditional Logic](./ConditionalLogic.md)
+- [Agent Transitions](./AgentTransitions.md)
+- [Context Expressions](./ContextExpressions.md)
+- [State Management in Multi-Agent Systems](./StateManagement.md)
+- [Advanced Agent Orchestration](./AdvancedAgentOrchestration.md)
 
 **Further Reading:**  
 - [OpenAI Cookbook: Orchestrating Multi-Agent Workflows](https://github.com/openai/openai-cookbook)

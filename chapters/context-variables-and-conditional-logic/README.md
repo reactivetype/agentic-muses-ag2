@@ -1,23 +1,20 @@
 # Context Variables and Conditional Logic
 
-This chapter covers how to manage context and implement conditional logic in agent workflows.
+Using context for dynamic agent state and conditional transitions
 
 ## Prerequisites
 
-- Understanding of agent protocols
-- Knowledge of Python context management
-- Familiarity with conditional programming
+* Advanced Agent Orchestration
 
 ## Learning Objectives
 
-- Master context variable management
-- Understand conditional logic in agents
-- Learn context condition evaluation
-- Implement complex agent workflows
+* Store and update context variables in multi-agent workflows
+* Define and use conditional logic for agent transitions
+* Leverage context expressions for complex flow control
 
-## Chapter Structure
+## Sections
 
-* [ContextVariables](/context-variables-and-conditional-logic/contextvariables.html)
-* [ContextCondition and AvailableCondition](/context-variables-and-conditional-logic/contextcondition-and-availablecondition.html)
-* [OnCondition and OnContextCondition](/context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html)
-* [ContextExpression](/context-variables-and-conditional-logic/contextexpression.html)
+* [ContextVariables](chapters/context-variables-and-conditional-logic/contextvariables.md)
+* [ContextCondition and AvailableCondition](chapters/context-variables-and-conditional-logic/contextcondition-and-availablecondition.md)
+* [OnCondition and OnContextCondition](chapters/context-variables-and-conditional-logic/oncondition-and-oncontextcondition.md)
+* [ContextExpression](chapters/context-variables-and-conditional-logic/contextexpression.md)

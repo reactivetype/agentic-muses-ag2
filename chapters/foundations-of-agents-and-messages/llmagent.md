@@ -130,11 +130,11 @@ reply = llm_agent.receive_message(msg)
 
 ## Related Concepts
 
-- [Agent Protocol](./agent-protocol.html)
-- [Messages and Events](./messages-and-events.html)
-- [ToolAgent](./toolagent.html)
-- [CoordinatorAgent](./coordinatoragent.html)
-- [Prompt Engineering](./prompt-engineering.html)
+- [Agent Protocol](./agent-protocol.md)
+- [Messages and Events](./messages-and-events.md)
+- [ToolAgent](./toolagent.md)
+- [CoordinatorAgent](./coordinatoragent.md)
+- [Prompt Engineering](./prompt-engineering.md)
 - [OpenAI API Documentation](https://platform.openai.com/docs/api-reference)
 
 For further reading, see [Multi-Agent Systems](https://en.wikipedia.org/wiki/Multi-agent_system) and [Design Patterns for Conversational Agents](https://arxiv.org/abs/2302.12346).

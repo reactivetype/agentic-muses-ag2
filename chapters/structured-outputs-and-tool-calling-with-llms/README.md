@@ -1,22 +1,20 @@
 # Structured Outputs and Tool Calling with LLMs
 
-This chapter covers how to handle structured outputs and tool calling in LLM interactions.
+Managing structured outputs and tool invocation in LLM-based agents
 
 ## Prerequisites
 
-- Understanding of LLM concepts
-- Knowledge of JSON schema
-- Familiarity with function calling
+* LLM Configuration and Model Clients
+* Tools and Dependency Injection
 
 ## Learning Objectives
 
-- Master function and tool schema definition
-- Understand structured output formatting
-- Learn tool call message handling
-- Implement function call processing
+* Define and register functions with JSON schema
+* Configure structured outputs for LLM responses
+* Handle tool call and function call message flows
 
-## Chapter Structure
+## Sections
 
-* [Function and Tool schemas](/structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html)
-* [Structured output formatting](/structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html)
-* [Tool Call and Function Call Message Handling](/structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html)
+* [Function and Tool schemas](chapters/structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.md)
+* [Structured output formatting](chapters/structured-outputs-and-tool-calling-with-llms/structured-output-formatting.md)
+* [Tool call and function call message handling](chapters/structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.md)

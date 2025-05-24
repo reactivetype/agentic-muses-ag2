@@ -1,22 +1,19 @@
 # LLM Configuration and Model Clients
 
-This chapter covers how to configure and use different LLM providers in the system.
+Configuring LLMs and managing multiple model backends
 
 ## Prerequisites
 
-- Understanding of LLM concepts
-- Knowledge of Python configuration management
-- Familiarity with async programming
+* Tools and Dependency Injection
 
 ## Learning Objectives
 
-- Master LLM configuration management
-- Understand the ModelClient protocol
-- Learn config list and filtering techniques
-- Implement multi-model support
+* Configure LLMs using LLMConfig and config lists
+* Select and validate model clients
+* Filter and manage configurations for multi-backend support
 
-## Chapter Structure
+## Sections
 
-* [LLMConfig and LLMConfigEntry](/llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.html)
-* [ModelClient protocol](/llm-configuration-and-model-clients/modelclient-protocol.html)
-* [Config list and filtering](/llm-configuration-and-model-clients/config-list-and-filtering.html)
+* [LLMConfig and LLMConfigEntry](chapters/llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.md)
+* [ModelClient protocol](chapters/llm-configuration-and-model-clients/modelclient-protocol.md)
+* [Config list and filtering](chapters/llm-configuration-and-model-clients/config-list-and-filtering.md)

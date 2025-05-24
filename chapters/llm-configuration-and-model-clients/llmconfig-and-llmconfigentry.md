@@ -161,15 +161,15 @@ def generate(prompt: str, llm_entry: LLMConfigEntry = Depends(get_llm_entry)):
 ## Related Concepts
 
 - [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection)
-- [Model Client Abstraction](model-client-abstraction.html)
-- [Multi-Backend LLM Orchestration](multi-backend-llm.html)
+- [Model Client Abstraction](model-client-abstraction.md)
+- [Multi-Backend LLM Orchestration](multi-backend-llm.md)
 - [Configuration Management in Python](https://docs.python.org/3/library/configparser.html)
 - [Environment Variables and Secret Management](https://12factor.net/config)
-- [Prompt Engineering](prompt-engineering.html)
+- [Prompt Engineering](prompt-engineering.md)
 - [LLM Client Libraries (e.g., OpenAI, HuggingFace Transformers)](https://platform.openai.com/docs/libraries)
 
 ---
 
 **See also:**  
-- [Tools and Dependency Injection](tools-dependency-injection.html)  
-- [Filtering and Routing Requests to LLMs](llm-routing.html)
+- [Tools and Dependency Injection](tools-dependency-injection.md)  
+- [Filtering and Routing Requests to LLMs](llm-routing.md)

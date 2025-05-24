@@ -1,23 +1,20 @@
 # Tools and Dependency Injection
 
-This chapter covers how to create and manage tools, and how to handle dependencies in the agent system.
+Leveraging tools and dependency injection for agent extensibility
 
 ## Prerequisites
 
-- Understanding of agent protocols
-- Knowledge of Python decorators
-- Familiarity with dependency injection concepts
+* Conversable Agent Workflow
 
 ## Learning Objectives
 
-- Master tool abstraction and registration
-- Understand toolkit organization
-- Learn dependency injection with Depends
-- Implement context parameter injection
+* Wrap functions as tools for agent use
+* Inject dependencies and context into functions
+* Understand the toolkit and tool registration mechanisms
 
-## Chapter Structure
+## Sections
 
-* [Tool abstraction](/tools-and-dependency-injection/tool-abstraction.html)
-* [Toolkit](/tools-and-dependency-injection/toolkit.html)
-* [Dependency injection with Depends](/tools-and-dependency-injection/dependency-injection-with-depends.html)
-* [Context parameter injection](/tools-and-dependency-injection/context-parameter-injection.html)
+* [Tool abstraction](chapters/tools-and-dependency-injection/tool-abstraction.md)
+* [Toolkit](chapters/tools-and-dependency-injection/toolkit.md)
+* [Dependency injection with Depends](chapters/tools-and-dependency-injection/dependency-injection-with-depends.md)
+* [Context parameter injection](chapters/tools-and-dependency-injection/context-parameter-injection.md)

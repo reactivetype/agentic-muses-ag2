@@ -110,11 +110,11 @@ print(response)
 
 ## Related Concepts
 
-- [LLMConfig and LLMConfigEntry](llmconfig-and-llmconfigentry.html)
-- [Config List and Filtering](config-list-and-filtering.html)
-- [Multi-Backend LLM Orchestration](multi-backend-llm.html)
-- [Prompt Engineering](prompt-engineering.html)
-- [Tools and Dependency Injection](tools-dependency-injection.html)
+- [LLMConfig](#) - Model configuration objects for LLM clients.
+- [Dependency Injection](#) - Patterns for injecting dependencies like model clients.
+- [Config Lists](#) - Managing multiple LLM configurations for multi-backend support.
+- [LLM Selection and Routing](#) - Strategies for routing requests to different model backends.
+- [Provider Abstraction Patterns](#) - Techniques for abstracting third-party services.
 
 ---
 

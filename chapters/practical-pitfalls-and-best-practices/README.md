@@ -1,22 +1,19 @@
 # Practical Pitfalls and Best Practices
 
-This chapter covers common pitfalls and best practices for building reliable agent systems.
+Avoiding common mistakes and applying best practices in complex agent systems
 
 ## Prerequisites
 
-- Understanding of all previous chapters
-- Experience with agent development
-- Knowledge of Python best practices
+* All previous chapters
 
 ## Learning Objectives
 
-- Master error handling in agent orchestration
-- Understand security considerations
-- Learn testing and logging strategies
-- Implement robust agent systems
+* Identify and avoid common pitfalls in multi-agent workflows
+* Apply security best practices for tool and code execution
+* Implement robust logging and monitoring for agents
 
-## Chapter Structure
+## Sections
 
-* [Error handling in agent orchestration](/practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.html)
-* [Security considerations for code execution](/practical-pitfalls-and-best-practices/security-considerations-for-code-execution.html)
-* [Testing and logging strategies](/practical-pitfalls-and-best-practices/testing-and-logging-strategies.html)
+* [Error handling in agent orchestration](chapters/practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.md)
+* [Security considerations for code execution](chapters/practical-pitfalls-and-best-practices/security-considerations-for-code-execution.md)
+* [Testing and logging strategies](chapters/practical-pitfalls-and-best-practices/testing-and-logging-strategies.md)

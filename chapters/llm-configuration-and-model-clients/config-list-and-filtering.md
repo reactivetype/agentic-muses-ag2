@@ -138,11 +138,11 @@ llm_config = get_best_available_llm(config_list)
 
 ## Related Concepts
 
-- [LLMConfig and LLMConfigEntry](llmconfig-and-llmconfigentry.html)
-- [Model Client Protocol](modelclient-protocol.html)
-- [Multi-Backend LLM Orchestration](multi-backend-llm.html)
-- [Prompt Engineering](prompt-engineering.html)
-- [Tools and Dependency Injection](tools-dependency-injection.html)
+- [Tools and Dependency Injection](#)
+- [LLMConfig Usage Patterns](#)
+- [Model Client Abstraction](#)
+- [Multi-backend Orchestration](#)
+- [Error Handling and Validation for LLMs](#)
 
 For further reading:
 - [Dependency Injection Patterns in Python](https://realpython.com/dependency-injection-python/)
