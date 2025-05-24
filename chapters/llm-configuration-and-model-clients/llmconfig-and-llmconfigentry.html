@@ -1,0 +1,1387 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>LLMConfig and LLMConfigEntry · Agentic Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        <meta name="author" content="AutoGen Team">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="modelclient-protocol.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../foundations-of-agents-and-messages/">
+            
+                <a href="../foundations-of-agents-and-messages/">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Foundations of Agents and Messages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../foundations-of-agents-and-messages/agent-protocol.html">
+            
+                <a href="../foundations-of-agents-and-messages/agent-protocol.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Agent Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../foundations-of-agents-and-messages/llmagent.html">
+            
+                <a href="../foundations-of-agents-and-messages/llmagent.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    LLMAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../foundations-of-agents-and-messages/conversableagent.html">
+            
+                <a href="../foundations-of-agents-and-messages/conversableagent.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    ConversableAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../foundations-of-agents-and-messages/basemessage-and-message-serialization.html">
+            
+                <a href="../foundations-of-agents-and-messages/basemessage-and-message-serialization.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    BaseMessage and message serialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../conversable-agent-workflow/">
+            
+                <a href="../conversable-agent-workflow/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Conversable Agent Workflow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../conversable-agent-workflow/reply-function-registration.html">
+            
+                <a href="../conversable-agent-workflow/reply-function-registration.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Reply function registration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../conversable-agent-workflow/chat-message-flow.html">
+            
+                <a href="../conversable-agent-workflow/chat-message-flow.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Chat message flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../conversable-agent-workflow/human-input-modes.html">
+            
+                <a href="../conversable-agent-workflow/human-input-modes.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Human input modes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../tools-and-dependency-injection/">
+            
+                <a href="../tools-and-dependency-injection/">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Tools and Dependency Injection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../tools-and-dependency-injection/tool-abstraction.html">
+            
+                <a href="../tools-and-dependency-injection/tool-abstraction.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    Tool abstraction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../tools-and-dependency-injection/toolkit.html">
+            
+                <a href="../tools-and-dependency-injection/toolkit.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    Toolkit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../tools-and-dependency-injection/dependency-injection-with-depends.html">
+            
+                <a href="../tools-and-dependency-injection/dependency-injection-with-depends.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    Dependency injection with Depends
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../tools-and-dependency-injection/context-parameter-injection.html">
+            
+                <a href="../tools-and-dependency-injection/context-parameter-injection.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    Context parameter injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    LLM Configuration and Model Clients
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="llmconfig-and-llmconfigentry.html">
+            
+                <a href="llmconfig-and-llmconfigentry.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    LLMConfig and LLMConfigEntry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="modelclient-protocol.html">
+            
+                <a href="modelclient-protocol.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    ModelClient protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="config-list-and-filtering.html">
+            
+                <a href="config-list-and-filtering.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    Config list and filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../advanced-agent-orchestration/">
+            
+                <a href="../advanced-agent-orchestration/">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    Advanced Agent Orchestration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../advanced-agent-orchestration/agent-orchestration-patterns.md">
+            
+                <span>
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    Agent orchestration patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../advanced-agent-orchestration/multi-agent-workflows.md">
+            
+                <span>
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    Multi-agent workflows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../advanced-agent-orchestration/agent-state-management.md">
+            
+                <span>
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    Agent state management
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../context-variables-and-conditional-logic/">
+            
+                <a href="../context-variables-and-conditional-logic/">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    Context Variables and Conditional Logic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../context-variables-and-conditional-logic/contextvariables.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextvariables.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    ContextVariables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../context-variables-and-conditional-logic/contextcondition-and-availablecondition.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextcondition-and-availablecondition.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    ContextCondition and AvailableCondition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html">
+            
+                <a href="../context-variables-and-conditional-logic/oncondition-and-oncontextcondition.html">
+            
+                    
+                        <b>1.7.3.</b>
+                    
+                    OnCondition and OnContextCondition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../context-variables-and-conditional-logic/contextexpression.html">
+            
+                <a href="../context-variables-and-conditional-logic/contextexpression.html">
+            
+                    
+                        <b>1.7.4.</b>
+                    
+                    ContextExpression
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../tool-and-function-interoperability/">
+            
+                <a href="../tool-and-function-interoperability/">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    Tool and Function Interoperability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../tool-and-function-interoperability/tool-and-function-schemas.md">
+            
+                <span>
+            
+                    
+                        <b>1.8.1.</b>
+                    
+                    Tool and function schemas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../tool-and-function-interoperability/function-calling-with-llms.md">
+            
+                <span>
+            
+                    
+                        <b>1.8.2.</b>
+                    
+                    Function calling with LLMs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../tool-and-function-interoperability/tool-execution-and-validation.md">
+            
+                <span>
+            
+                    
+                        <b>1.8.3.</b>
+                    
+                    Tool execution and validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../retrieval-augmented-generation-and-vector-databases/">
+            
+                <a href="../retrieval-augmented-generation-and-vector-databases/">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    Retrieval Augmented Generation and Vector Databases
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../retrieval-augmented-generation-and-vector-databases/rag-fundamentals.md">
+            
+                <span>
+            
+                    
+                        <b>1.9.1.</b>
+                    
+                    RAG fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../retrieval-augmented-generation-and-vector-databases/vector-database-integration.md">
+            
+                <span>
+            
+                    
+                        <b>1.9.2.</b>
+                    
+                    Vector database integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../retrieval-augmented-generation-and-vector-databases/rag-optimization.md">
+            
+                <span>
+            
+                    
+                        <b>1.9.3.</b>
+                    
+                    RAG optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../structured-outputs-and-tool-calling-with-llms/">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/">
+            
+                    
+                        <b>1.10.</b>
+                    
+                    Structured Outputs and Tool Calling with LLMs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html">
+            
+                    
+                        <b>1.10.1.</b>
+                    
+                    Function and Tool schemas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html">
+            
+                    
+                        <b>1.10.2.</b>
+                    
+                    Structured output formatting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html">
+            
+                <a href="../structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html">
+            
+                    
+                        <b>1.10.3.</b>
+                    
+                    Tool Call and Function Call Message Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../multimodal-and-vision-capabilities/">
+            
+                <a href="../multimodal-and-vision-capabilities/">
+            
+                    
+                        <b>1.11.</b>
+                    
+                    Multimodal and Vision Capabilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../multimodal-and-vision-capabilities/vision-models-and-integration.md">
+            
+                <span>
+            
+                    
+                        <b>1.11.1.</b>
+                    
+                    Vision models and integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../multimodal-and-vision-capabilities/image-processing-and-analysis.md">
+            
+                <span>
+            
+                    
+                        <b>1.11.2.</b>
+                    
+                    Image processing and analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../multimodal-and-vision-capabilities/multimodal-agent-workflows.md">
+            
+                <span>
+            
+                    
+                        <b>1.11.3.</b>
+                    
+                    Multimodal agent workflows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../agent-capabilities-and-composability/">
+            
+                <a href="../agent-capabilities-and-composability/">
+            
+                    
+                        <b>1.12.</b>
+                    
+                    Agent Capabilities and Composability
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../agent-capabilities-and-composability/agent-capability-definition.md">
+            
+                <span>
+            
+                    
+                        <b>1.12.1.</b>
+                    
+                    Agent capability definition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../agent-capabilities-and-composability/capability-composition.md">
+            
+                <span>
+            
+                    
+                        <b>1.12.2.</b>
+                    
+                    Capability composition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../agent-capabilities-and-composability/capability-discovery-and-routing.md">
+            
+                <span>
+            
+                    
+                        <b>1.12.3.</b>
+                    
+                    Capability discovery and routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../group-and-swarm-agent-patterns/">
+            
+                <a href="../group-and-swarm-agent-patterns/">
+            
+                    
+                        <b>1.13.</b>
+                    
+                    Group and Swarm Agent Patterns
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../group-and-swarm-agent-patterns/group-agent-coordination.md">
+            
+                <span>
+            
+                    
+                        <b>1.13.1.</b>
+                    
+                    Group agent coordination
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../group-and-swarm-agent-patterns/swarm-intelligence-patterns.md">
+            
+                <span>
+            
+                    
+                        <b>1.13.2.</b>
+                    
+                    Swarm intelligence patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../group-and-swarm-agent-patterns/distributed-agent-systems.md">
+            
+                <span>
+            
+                    
+                        <b>1.13.3.</b>
+                    
+                    Distributed agent systems
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../practical-pitfalls-and-best-practices/">
+            
+                <a href="../practical-pitfalls-and-best-practices/">
+            
+                    
+                        <b>1.14.</b>
+                    
+                    Practical Pitfalls and Best Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.html">
+            
+                <a href="../practical-pitfalls-and-best-practices/error-handling-in-agent-orchestration.html">
+            
+                    
+                        <b>1.14.1.</b>
+                    
+                    Error handling in agent orchestration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../practical-pitfalls-and-best-practices/security-considerations-for-code-execution.html">
+            
+                <a href="../practical-pitfalls-and-best-practices/security-considerations-for-code-execution.html">
+            
+                    
+                        <b>1.14.2.</b>
+                    
+                    Security considerations for code execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../practical-pitfalls-and-best-practices/testing-and-logging-strategies.html">
+            
+                <a href="../practical-pitfalls-and-best-practices/testing-and-logging-strategies.html">
+            
+                    
+                        <b>1.14.3.</b>
+                    
+                    Testing and logging strategies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >LLMConfig and LLMConfigEntry</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="llmconfig-and-llmconfigentry">LLMConfig and LLMConfigEntry</h1>
+<h2 id="overview">Overview</h2>
+<p><code>LLMConfig</code> and <code>LLMConfigEntry</code> provide a standardized way to configure and manage Language Model (LLM) backends in modern machine learning and AI applications. These abstractions enable developers to flexibly define, select, and validate different LLMs, whether running locally or via cloud APIs, while supporting dependency injection and multi-backend switching. This configuration layer is essential for scalable, maintainable, and testable AI systems.</p>
+<hr></hr>
+<h2 id="explanation">Explanation</h2>
+<h3 id="what-are-llmconfig-and-llmconfigentry">What are LLMConfig and LLMConfigEntry?</h3>
+<ul>
+<li><strong>LLMConfigEntry</strong>: Represents a single LLM configuration, encapsulating parameters such as model name, backend type, API keys, endpoints, and other settings.</li>
+<li><strong>LLMConfig</strong>: A collection (often a list or registry) of multiple <code>LLMConfigEntry</code> objects, enabling support for multiple models or backends within the same application.</li>
+</ul>
+<p>These constructs allow applications to:</p>
+<ul>
+<li>Define multiple LLM backends (e.g., OpenAI, HuggingFace, Azure, local models).</li>
+<li>Filter/select the most appropriate model client based on use-case.</li>
+<li>Validate configuration correctness at startup or runtime.</li>
+<li>Inject model clients using dependency injection patterns.</li>
+</ul>
+<h3 id="how-does-it-work">How Does It Work?</h3>
+<ol>
+<li><strong>Configuration Definition</strong>: <ul>
+<li>Each backend/model is described via an <code>LLMConfigEntry</code>.</li>
+<li>Entries are collected into an <code>LLMConfig</code> list.</li>
+</ul>
+</li>
+<li><strong>Selection &amp; Filtering</strong>: <ul>
+<li>At runtime, code selects the appropriate config entry based on tags, backend type, or other metadata.</li>
+</ul>
+</li>
+<li><strong>Validation</strong>: <ul>
+<li>Each entry can be validated for required fields (e.g., API keys).</li>
+</ul>
+</li>
+<li><strong>Dependency Injection</strong>: <ul>
+<li>Tools and frameworks inject configured clients into business logic, decoupling model selection from usage.</li>
+</ul>
+</li>
+</ol>
+<h3 id="example-llmconfigentry-fields">Example LLMConfigEntry Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Example Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>Human-readable name</td>
+<td>"OpenAI GPT-4"</td>
+</tr>
+<tr>
+<td><code>backend</code></td>
+<td>Backend identifier</td>
+<td>"openai", "huggingface"</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td>Model name or ID</td>
+<td>"gpt-4", "llama-2-70b"</td>
+</tr>
+<tr>
+<td><code>api_key</code></td>
+<td>API key or credential (if needed)</td>
+<td>"sk-..."</td>
+</tr>
+<tr>
+<td><code>endpoint</code></td>
+<td>Custom endpoint URL</td>
+<td>"<a href="https://api.openai.com/" target="_blank">https://api.openai.com/</a>"</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>Custom tags for filtering</td>
+<td>["prod", "fast"]</td>
+</tr>
+<tr>
+<td><code>params</code></td>
+<td>Additional backend/model parameters</td>
+<td><code>{"temperature": 0.7}</code></td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="examples">Examples</h2>
+<h3 id="1-defining-llmconfigentry-and-llmconfig">1. Defining LLMConfigEntry and LLMConfig</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># Example structure (Python)</span>
+
+<span class="hljs-keyword">from</span> typing <span class="hljs-keyword">import</span> <span class="hljs-type">List</span>, <span class="hljs-type">Dict</span>, <span class="hljs-type">Optional</span>
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">LLMConfigEntry</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">
+        self,
+        name: <span class="hljs-built_in">str</span>,
+        backend: <span class="hljs-built_in">str</span>,
+        model: <span class="hljs-built_in">str</span>,
+        api_key: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>] = <span class="hljs-literal">None</span>,
+        endpoint: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>] = <span class="hljs-literal">None</span>,
+        tags: <span class="hljs-type">Optional</span>[<span class="hljs-type">List</span>[<span class="hljs-built_in">str</span>]] = <span class="hljs-literal">None</span>,
+        params: <span class="hljs-type">Optional</span>[<span class="hljs-type">Dict</span>] = <span class="hljs-literal">None</span>
+    </span>):
+        <span class="hljs-variable language_">self</span>.name = name
+        <span class="hljs-variable language_">self</span>.backend = backend
+        <span class="hljs-variable language_">self</span>.model = model
+        <span class="hljs-variable language_">self</span>.api_key = api_key
+        <span class="hljs-variable language_">self</span>.endpoint = endpoint
+        <span class="hljs-variable language_">self</span>.tags = tags <span class="hljs-keyword">or</span> []
+        <span class="hljs-variable language_">self</span>.params = params <span class="hljs-keyword">or</span> {}
+
+<span class="hljs-comment"># Collection of configs</span>
+LLMConfig = <span class="hljs-type">List</span>[LLMConfigEntry]
+</code></pre>
+<h3 id="2-sample-configuration-list">2. Sample Configuration List</h3>
+<pre><code class="lang-python">llm_config: LLMConfig = [
+    LLMConfigEntry(
+        name=<span class="hljs-string">"OpenAI GPT-4"</span>,
+        backend=<span class="hljs-string">"openai"</span>,
+        model=<span class="hljs-string">"gpt-4"</span>,
+        api_key=<span class="hljs-string">"sk-..."</span>,
+        tags=[<span class="hljs-string">"prod"</span>, <span class="hljs-string">"default"</span>]
+    ),
+    LLMConfigEntry(
+        name=<span class="hljs-string">"HuggingFace Llama 2"</span>,
+        backend=<span class="hljs-string">"huggingface"</span>,
+        model=<span class="hljs-string">"llama-2-70b"</span>,
+        api_key=<span class="hljs-string">"hf_..."</span>,
+        endpoint=<span class="hljs-string">"https://api-inference.huggingface.co/models/llama-2-70b"</span>,
+        tags=[<span class="hljs-string">"experimental"</span>]
+    ),
+    LLMConfigEntry(
+        name=<span class="hljs-string">"Local GPT4All"</span>,
+        backend=<span class="hljs-string">"gpt4all"</span>,
+        model=<span class="hljs-string">"gpt4all-j"</span>,
+        tags=[<span class="hljs-string">"local"</span>, <span class="hljs-string">"offline"</span>]
+    )
+]
+</code></pre>
+<h3 id="3-selecting-and-validating-a-model-client">3. Selecting and Validating a Model Client</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">select_llm</span>(<span class="hljs-params">config: LLMConfig, tag: <span class="hljs-built_in">str</span></span>) -&gt; LLMConfigEntry:
+    <span class="hljs-keyword">for</span> entry <span class="hljs-keyword">in</span> config:
+        <span class="hljs-keyword">if</span> tag <span class="hljs-keyword">in</span> entry.tags:
+            validate_llm_entry(entry)
+            <span class="hljs-keyword">return</span> entry
+    <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">f"No LLM with tag '<span class="hljs-subst">{tag}</span>' found."</span>)
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">validate_llm_entry</span>(<span class="hljs-params">entry: LLMConfigEntry</span>):
+    <span class="hljs-keyword">if</span> entry.backend <span class="hljs-keyword">in</span> [<span class="hljs-string">"openai"</span>, <span class="hljs-string">"huggingface"</span>] <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> entry.api_key:
+        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">f"<span class="hljs-subst">{entry.backend}</span> backend requires an API key."</span>)
+
+<span class="hljs-comment"># Usage</span>
+chosen_entry = select_llm(llm_config, <span class="hljs-string">"prod"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f"Selected model: <span class="hljs-subst">{chosen_entry.name}</span> (<span class="hljs-subst">{chosen_entry.model}</span>)"</span>)
+</code></pre>
+<h3 id="4-dependency-injection-example-with-fastapi">4. Dependency Injection Example (with FastAPI)</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> Depends, FastAPI
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_llm_entry</span>() -&gt; LLMConfigEntry:
+    <span class="hljs-comment"># For demonstration, always select 'prod'</span>
+    <span class="hljs-keyword">return</span> select_llm(llm_config, <span class="hljs-string">"prod"</span>)
+
+app = FastAPI()
+
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/generate"</span></span>)</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">generate</span>(<span class="hljs-params">prompt: <span class="hljs-built_in">str</span>, llm_entry: LLMConfigEntry = Depends(<span class="hljs-params">get_llm_entry</span>)</span>):
+    <span class="hljs-comment"># Use llm_entry to instantiate and call the model client</span>
+    ...
+</code></pre>
+<hr></hr>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li><strong>Centralize Configuration</strong>: Keep all <code>LLMConfigEntry</code> instances in a central location (e.g., config file, environment module).</li>
+<li><strong>Secure Secrets</strong>: Never hard-code API keys; use environment variables or secret managers.</li>
+<li><strong>Use Tags and Metadata</strong>: Tag entries for easy selection (e.g., <code>["prod"]</code>, <code>["test"]</code>, <code>["fast"]</code>).</li>
+<li><strong>Validate Early</strong>: Validate configuration at startup to catch missing fields or invalid values.</li>
+<li><strong>Support Overrides</strong>: Allow environment or runtime overrides (e.g., via CLI or ENV) for model selection.</li>
+<li><strong>Separate Concerns</strong>: Keep configuration and client logic separate for testability and clarity.</li>
+<li><strong>Document Each Entry</strong>: Add comments or documentation for each config entry to explain its purpose.</li>
+<li><strong>Handle Multi-Backend</strong>: Ensure your code can handle different backends' requirements and parameters.</li>
+<li><strong>Monitor and Rotate Keys</strong>: Regularly audit and rotate API keys used in configs.</li>
+</ul>
+<hr></hr>
+<h2 id="related-concepts">Related Concepts</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dependency_injection" target="_blank">Dependency Injection</a></li>
+<li><a href="model-client-abstraction.html">Model Client Abstraction</a></li>
+<li><a href="multi-backend-llm.html">Multi-Backend LLM Orchestration</a></li>
+<li><a href="https://docs.python.org/3/library/configparser.html" target="_blank">Configuration Management in Python</a></li>
+<li><a href="https://12factor.net/config" target="_blank">Environment Variables and Secret Management</a></li>
+<li><a href="prompt-engineering.html">Prompt Engineering</a></li>
+<li><a href="https://platform.openai.com/docs/libraries" target="_blank">LLM Client Libraries (e.g., OpenAI, HuggingFace Transformers)</a></li>
+</ul>
+<hr></hr>
+<p><strong>See also:</strong>  </p>
+<ul>
+<li><a href="tools-dependency-injection.html">Tools and Dependency Injection</a>  </li>
+<li><a href="llm-routing.html">Filtering and Routing Requests to LLMs</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: LLM Configuration and Model Clients">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="modelclient-protocol.html" class="navigation navigation-next " aria-label="Next page: ModelClient protocol">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"LLMConfig and LLMConfigEntry","level":"1.5.1","depth":2,"next":{"title":"ModelClient protocol","level":"1.5.2","depth":2,"path":"chapters/llm-configuration-and-model-clients/modelclient-protocol.md","ref":"chapters/llm-configuration-and-model-clients/modelclient-protocol.md","articles":[]},"previous":{"title":"LLM Configuration and Model Clients","level":"1.5","depth":1,"path":"chapters/llm-configuration-and-model-clients/README.md","ref":"chapters/llm-configuration-and-model-clients/README.md","articles":[{"title":"LLMConfig and LLMConfigEntry","level":"1.5.1","depth":2,"path":"chapters/llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.md","ref":"chapters/llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.md","articles":[]},{"title":"ModelClient protocol","level":"1.5.2","depth":2,"path":"chapters/llm-configuration-and-model-clients/modelclient-protocol.md","ref":"chapters/llm-configuration-and-model-clients/modelclient-protocol.md","articles":[]},{"title":"Config list and filtering","level":"1.5.3","depth":2,"path":"chapters/llm-configuration-and-model-clients/config-list-and-filtering.md","ref":"chapters/llm-configuration-and-model-clients/config-list-and-filtering.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-default","highlight","fontsettings","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true,"showSummary":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","author":"AutoGen Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Agentic Documentation","language":"en","gitbook":"*"},"file":{"path":"chapters/llm-configuration-and-model-clients/llmconfig-and-llmconfigentry.md","mtime":"2025-05-24T00:27:00.022Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-05-24T00:27:11.294Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
