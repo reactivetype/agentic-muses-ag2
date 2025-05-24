@@ -17,6 +17,6 @@ This chapter covers how to handle structured outputs and tool calling in LLM int
 
 ## Chapter Structure
 
-* [Function and Tool schemas](structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html)
-* [Structured output formatting](structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html)
-* [Tool Call and Function Call Message Handling](structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html)
+* [Function and Tool schemas](/structured-outputs-and-tool-calling-with-llms/function-and-tool-schemas.html)
+* [Structured output formatting](/structured-outputs-and-tool-calling-with-llms/structured-output-formatting.html)
+* [Tool Call and Function Call Message Handling](/structured-outputs-and-tool-calling-with-llms/tool-call-and-function-call-message-handling.html)
